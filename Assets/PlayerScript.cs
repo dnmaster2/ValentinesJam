@@ -113,34 +113,36 @@ public class PlayerScript : MonoBehaviour
             }
         }
 
-        /*
         if (isClimbing)
         {
-            if (Input.GetKeyDown(KeyCode.W))
+            print("yey");
+            rb.gravityScale = 0f;
+            if (Input.GetKey(KeyCode.W))
             {
                 rb.velocity = Vector2.up * 5f;
-                rb.gravityScale = 0f;
             }
-            if (Input.GetKeyDown(KeyCode.S))
+            if (Input.GetKey(KeyCode.S))
             {
-                rb.velocity = Vector2.down * 5f;
-                rb.gravityScale = 0f;
-            }
-            else
-            {
-                rb.velocity = Vector2.zero;
+                rb.velocity = Vector2.down * 5f;              
             }
         }
     }
 
     private void OnCollisionStay2D(Collision2D collision)
-    {        
-        if(Input.GetKeyDown(KeyCode.S) && collision.gameObject.CompareTag("Parede") && p2)
+    {
+        if (Input.GetKeyDown(KeyCode.S) && collision.gameObject.CompareTag("Parede") && p2)
         {
             print("opaaa");
             isClimbing = true;
         }
     }
-    */
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Parede") && p2)
+        {
+            isClimbing = false;
+            rb.gravityScale = 1f;
+        }
     }
 }
