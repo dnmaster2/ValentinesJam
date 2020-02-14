@@ -17,7 +17,7 @@ public class PlayerScript : MonoBehaviour
     float totalCount;
     public Transform sensor;
     public LayerMask chao; 
-    bool estaNoChao;
+    public bool estaNoChao, isJumping;
 
     void Awake()
     {
@@ -25,7 +25,6 @@ public class PlayerScript : MonoBehaviour
         totalCount = counter;
     }
 
-    // Update is called once per frame
     void Update()
     {
         rb.velocity = new Vector2(lado * velocity, rb.velocity.y);
@@ -52,24 +51,21 @@ public class PlayerScript : MonoBehaviour
             }
 
             estaNoChao = Physics2D.OverlapCircle(sensor.position, .15f, chao);
+            isJumping = (rb.velocity.y != 0f);
 
             if (estaNoChao && Input.GetKeyDown(KeyCode.UpArrow))
             {
                 rb.velocity = Vector2.up * jumpHeight;
+                counter = totalCount;
             }
 
-            if (!estaNoChao && Input.GetKey(KeyCode.UpArrow))
+            if (isJumping && Input.GetKey(KeyCode.UpArrow))
             {
                 if (counter > 0)
                 {
                     rb.velocity = Vector2.up * jumpHeight;
                     counter -= Time.deltaTime;
                 }
-            }
-
-            if (Input.GetKeyUp(KeyCode.UpArrow))
-            {
-                counter = totalCount;
             }
         }
 
@@ -96,13 +92,15 @@ public class PlayerScript : MonoBehaviour
             }
 
             estaNoChao = Physics2D.OverlapCircle(sensor.position, .15f, chao);
+            isJumping = (rb.velocity.y != 0f);
 
-            if (estaNoChao && Input.GetKeyDown(KeyCode.W))
+            if (estaNoChao && Input.GetKeyDown(KeyCode.UpArrow))
             {
                 rb.velocity = Vector2.up * jumpHeight;
+                counter = totalCount;
             }
 
-            if (!estaNoChao && Input.GetKey(KeyCode.W))
+            if (isJumping && Input.GetKey(KeyCode.UpArrow))
             {
                 if (counter > 0)
                 {
@@ -110,12 +108,6 @@ public class PlayerScript : MonoBehaviour
                     counter -= Time.deltaTime;
                 }
             }
-
-            if (Input.GetKeyUp(KeyCode.W))
-            {
-                counter = totalCount;
-            }
         }
-
     }
 }
