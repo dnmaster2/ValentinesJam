@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 35353799}
   - component: {fileID: 35353802}
   m_Layer: 0
-  m_Name: quadrado de testes
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -265,8 +265,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocity: 0
   maxVelocity: 5
-  jumpHeight: 0
-  maxJumpHeight: 0
+  jumpHeight: 5
+  counter: 0.2
   sensor: {fileID: 1475239816}
   chao:
     serializedVersion: 2
@@ -366,7 +366,7 @@ GameObject:
   - component: {fileID: 774649152}
   - component: {fileID: 774649151}
   m_Layer: 8
-  m_Name: quadrado de testes (1)
+  m_Name: Chao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

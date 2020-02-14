@@ -8,7 +8,8 @@ public class PlayerScript : MonoBehaviour
     public float velocity;
     public float maxVelocity;
     public float jumpHeight;
-    public float maxJumpHeight;
+    public float counter;
+    float totalCount;
     public Transform sensor;
     public LayerMask chao;
     float lado;
@@ -16,14 +17,15 @@ public class PlayerScript : MonoBehaviour
 
     void Awake()
     {
-        rb = GetComponent<Rigidbody2D>(); 
+        rb = GetComponent<Rigidbody2D>();
+        totalCount = counter;
     }
 
     // Update is called once per frame
     void Update()
     {
         #region movimento
-        rb.velocity = Vector2.left * lado * velocity;
+        rb.velocity = new Vector2(lado * velocity, rb.velocity.y);
 
         if (Input.GetButtonDown("Horizontal"))
         {
@@ -46,10 +48,25 @@ public class PlayerScript : MonoBehaviour
         }
         #endregion movimento
 
-        estaNoChao = Physics2D.OverlapCircle(sensor.position, .3f, chao);
+        estaNoChao = Physics2D.OverlapCircle(sensor.position, .15f, chao);
+
         if (estaNoChao && Input.GetKeyDown(KeyCode.Space))
         {
             rb.velocity = Vector2.up * jumpHeight;
+        }
+
+        if (!estaNoChao && Input.GetKey(KeyCode.Space))
+        {
+            if (counter > 0)
+            {
+                rb.velocity = Vector2.up * jumpHeight;
+                counter -= Time.deltaTime;
+            }
+        }
+
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            counter = totalCount;
         }
     }
 }
