@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
+    //Rigidbody
     Rigidbody2D rb;
+    public bool p1, p2;
+    //Variaveis Movimento
     public float velocity;
     public float maxVelocity;
+    float lado;
+    //Variaveis Pulo
     public float jumpHeight;
     public float counter;
     float totalCount;
     public Transform sensor;
-    public LayerMask chao;
-    float lado;
+    public LayerMask chao; 
     bool estaNoChao;
 
     void Awake()
@@ -24,49 +28,94 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        #region movimento
         rb.velocity = new Vector2(lado * velocity, rb.velocity.y);
-
-        if (Input.GetButtonDown("Horizontal"))
+        if (p1)
         {
-            lado = Input.GetAxisRaw("Horizontal");
-        }
-
-        if (Input.GetButton("Horizontal"))
-        {
-            if (velocity <= maxVelocity)
+            if (Input.GetButtonDown("Horizontal"))
             {
-                velocity++;
+                lado = Input.GetAxisRaw("Horizontal");
             }
-        }
-        else
-        {
-            if (velocity >= 0.25f)
+
+            if (Input.GetButton("Horizontal"))
             {
-                velocity -= 0.25f;
+                if (velocity <= maxVelocity)
+                {
+                    velocity++;
+                }
             }
-        }
-        #endregion movimento
+            else
+            {
+                if (velocity >= 0.25f)
+                {
+                    velocity -= 0.25f;
+                }
+            }
 
-        estaNoChao = Physics2D.OverlapCircle(sensor.position, .15f, chao);
+            estaNoChao = Physics2D.OverlapCircle(sensor.position, .15f, chao);
 
-        if (estaNoChao && Input.GetKeyDown(KeyCode.Space))
-        {
-            rb.velocity = Vector2.up * jumpHeight;
-        }
-
-        if (!estaNoChao && Input.GetKey(KeyCode.Space))
-        {
-            if (counter > 0)
+            if (estaNoChao && Input.GetKeyDown(KeyCode.UpArrow))
             {
                 rb.velocity = Vector2.up * jumpHeight;
-                counter -= Time.deltaTime;
+            }
+
+            if (!estaNoChao && Input.GetKey(KeyCode.UpArrow))
+            {
+                if (counter > 0)
+                {
+                    rb.velocity = Vector2.up * jumpHeight;
+                    counter -= Time.deltaTime;
+                }
+            }
+
+            if (Input.GetKeyUp(KeyCode.UpArrow))
+            {
+                counter = totalCount;
             }
         }
 
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (p2)
         {
-            counter = totalCount;
+            if (Input.GetButtonDown("Horizontal2"))
+            {
+                lado = Input.GetAxisRaw("Horizontal2");
+            }
+
+            if (Input.GetButton("Horizontal2"))
+            {
+                if (velocity <= maxVelocity)
+                {
+                    velocity++;
+                }
+            }
+            else
+            {
+                if (velocity >= 0.25f)
+                {
+                    velocity -= 0.25f;
+                }
+            }
+
+            estaNoChao = Physics2D.OverlapCircle(sensor.position, .15f, chao);
+
+            if (estaNoChao && Input.GetKeyDown(KeyCode.W))
+            {
+                rb.velocity = Vector2.up * jumpHeight;
+            }
+
+            if (!estaNoChao && Input.GetKey(KeyCode.W))
+            {
+                if (counter > 0)
+                {
+                    rb.velocity = Vector2.up * jumpHeight;
+                    counter -= Time.deltaTime;
+                }
+            }
+
+            if (Input.GetKeyUp(KeyCode.W))
+            {
+                counter = totalCount;
+            }
         }
+
     }
 }
