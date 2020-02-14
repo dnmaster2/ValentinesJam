@@ -7,6 +7,8 @@ public class PlayerScript : MonoBehaviour
     Rigidbody2D rb;
     public float velocity;
     public float maxVelocity;
+    public float jumpHeight;
+    public float maxJumpHeight;
     public Transform sensor;
     public LayerMask chao;
     float lado;
@@ -21,7 +23,8 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         #region movimento
-        rb.velocity = new Vector2(lado * velocity, rb.velocity.y);
+        rb.velocity = Vector2.left * lado * velocity;
+
         if (Input.GetButtonDown("Horizontal"))
         {
             lado = Input.GetAxisRaw("Horizontal");
@@ -44,9 +47,9 @@ public class PlayerScript : MonoBehaviour
         #endregion movimento
 
         estaNoChao = Physics2D.OverlapCircle(sensor.position, .3f, chao);
-        if(estaNoChao && Input.GetKeyDown(KeyCode.Space))
+        if (estaNoChao && Input.GetKeyDown(KeyCode.Space))
         {
-
+            rb.velocity = Vector2.up * jumpHeight;
         }
     }
 }
