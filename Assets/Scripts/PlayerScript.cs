@@ -16,7 +16,7 @@ public class PlayerScript : MonoBehaviour
     public float counter;
     float totalCount;
     public Transform sensor;
-    public LayerMask chao;
+    public LayerMask pulavel;
     public bool estaNoChao, isJumping, isClimbing;
 
     void Awake()
@@ -50,7 +50,7 @@ public class PlayerScript : MonoBehaviour
                 }
             }
 
-            estaNoChao = Physics2D.OverlapCircle(sensor.position, .15f, chao);
+            estaNoChao = Physics2D.OverlapCircle(sensor.position, .15f, pulavel);
             isJumping = (rb.velocity.y != 0f);
 
             if (estaNoChao && Input.GetKeyDown(KeyCode.UpArrow))
@@ -93,7 +93,7 @@ public class PlayerScript : MonoBehaviour
 
             if (!isClimbing)
             {
-                estaNoChao = Physics2D.OverlapCircle(sensor.position, .15f, chao);
+                estaNoChao = Physics2D.OverlapCircle(sensor.position, .15f, pulavel);
                 isJumping = (rb.velocity.y != 0f);
 
                 if (estaNoChao && Input.GetKeyDown(KeyCode.W))
