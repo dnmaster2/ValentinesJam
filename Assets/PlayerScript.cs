@@ -16,8 +16,8 @@ public class PlayerScript : MonoBehaviour
     public float counter;
     float totalCount;
     public Transform sensor;
-    public LayerMask chao; 
-    public bool estaNoChao, isJumping;
+    public LayerMask chao;
+    public bool estaNoChao, isJumping, isClimbing;
 
     void Awake()
     {
@@ -55,7 +55,7 @@ public class PlayerScript : MonoBehaviour
 
             if (estaNoChao && Input.GetKeyDown(KeyCode.UpArrow))
             {
-                rb.velocity = Vector2.up * jumpHeight;
+                rb.velocity = transform.up * jumpHeight;
                 counter = totalCount;
             }
 
@@ -63,7 +63,7 @@ public class PlayerScript : MonoBehaviour
             {
                 if (counter > 0)
                 {
-                    rb.velocity = Vector2.up * jumpHeight;
+                    rb.velocity = transform.up * jumpHeight;
                     counter -= Time.deltaTime;
                 }
             }
@@ -91,23 +91,56 @@ public class PlayerScript : MonoBehaviour
                 }
             }
 
-            estaNoChao = Physics2D.OverlapCircle(sensor.position, .15f, chao);
-            isJumping = (rb.velocity.y != 0f);
-
-            if (estaNoChao && Input.GetKeyDown(KeyCode.UpArrow))
+            if (!isClimbing)
             {
-                rb.velocity = Vector2.up * jumpHeight;
-                counter = totalCount;
-            }
+                estaNoChao = Physics2D.OverlapCircle(sensor.position, .15f, chao);
+                isJumping = (rb.velocity.y != 0f);
 
-            if (isJumping && Input.GetKey(KeyCode.UpArrow))
-            {
-                if (counter > 0)
+                if (estaNoChao && Input.GetKeyDown(KeyCode.W))
                 {
-                    rb.velocity = Vector2.up * jumpHeight;
-                    counter -= Time.deltaTime;
+                    rb.velocity = transform.up * jumpHeight;
+                    counter = totalCount;
+                }
+
+                if (isJumping && Input.GetKey(KeyCode.W))
+                {
+                    if (counter > 0)
+                    {
+                        rb.velocity = transform.up * jumpHeight;
+                        counter -= Time.deltaTime;
+                    }
                 }
             }
         }
+
+        /*
+        if (isClimbing)
+        {
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                rb.velocity = Vector2.up * 5f;
+                rb.gravityScale = 0f;
+            }
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                rb.velocity = Vector2.down * 5f;
+                rb.gravityScale = 0f;
+            }
+            else
+            {
+                rb.velocity = Vector2.zero;
+            }
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {        
+        if(Input.GetKeyDown(KeyCode.S) && collision.gameObject.CompareTag("Parede") && p2)
+        {
+            print("opaaa");
+            isClimbing = true;
+        }
+    }
+    */
     }
 }
