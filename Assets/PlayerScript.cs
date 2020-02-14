@@ -110,7 +110,7 @@ public class PlayerScript : MonoBehaviour
                         counter -= Time.deltaTime;
                     }
                 }
-            }           
+            }
         }
 
         /*
@@ -142,4 +142,5 @@ public class PlayerScript : MonoBehaviour
         }
     }
     */
+    }
 }
