@@ -20,7 +20,7 @@ public class LancarCorda : MonoBehaviour
             {
                 Vector2 destino = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 atualGancho = Instantiate(Gancho, transform.position, Quaternion.identity);
-                atualGancho.GetComponent<Corda>().destino = destino;
+                atualGancho.GetComponent<CordaDistance>().destino = destino;
                 cordaAtiva = true;
             }
             else

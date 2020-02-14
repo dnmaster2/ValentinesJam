@@ -406,7 +406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a847ae212d6b5884ba3f71e04d68ea82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Gancho: {fileID: 1029604035895430682, guid: be45d94196e30564db00ee98f17cddee, type: 3}
+  Gancho: {fileID: 1029604035895430682, guid: 3014b57da00d184439733d03dbdc11b4, type: 3}
   cordaAtiva: 0
 --- !u!70 &1689418942
 CapsuleCollider2D:
