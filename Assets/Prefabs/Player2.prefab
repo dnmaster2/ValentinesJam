@@ -211,7 +211,7 @@ MonoBehaviour:
   sensor: {fileID: 3289762348755226451}
   pulavel:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   estaNoChao: 0
   isJumping: 0
   isClimbing: 0

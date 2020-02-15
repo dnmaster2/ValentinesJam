@@ -73,7 +73,7 @@ public class PlayerScript : MonoBehaviour
                 }
             }
 
-            if (estaNoChao || Input.GetKeyUp(KeyCode.UpArrow))
+            if (estaNoChao)
             {
                 counter = totalCount;
             }
@@ -126,7 +126,7 @@ public class PlayerScript : MonoBehaviour
                     }
                 }
 
-                if (estaNoChao || Input.GetKeyUp(KeyCode.W))
+                if (estaNoChao)
                 {
                     counter = totalCount;
                 }
