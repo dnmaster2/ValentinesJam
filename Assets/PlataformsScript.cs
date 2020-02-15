@@ -6,16 +6,28 @@ public class PlataformsScript : MonoBehaviour
 {
     public bool movel;
     public float movel_distancia;
+    Vector2 direcao, origem;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
+        origem = transform.position;
+        direcao = new Vector2(transform.position.x + movel_distancia, transform.position.y);
+    }
+
+    void Update()
+    {       
         if (movel)
         {
-            if (transform.position.x < movel_distancia + transform.position.x)
+            if (transform.position.x > direcao.x)
             {
-                Vector2 direcao = new Vector2(transform.position.x + movel_distancia, transform.position.y);
-                transform.Translate(direcao);
+                print("voltano");
+                transform.Translate(Vector2.left * Time.deltaTime);
+            }
+
+            if (transform.position.x < direcao.x)
+            {
+                print("ino");
+                transform.Translate(Vector2.right * Time.deltaTime);
             }
         }
     }
