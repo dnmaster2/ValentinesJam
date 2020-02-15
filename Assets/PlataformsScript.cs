@@ -107,7 +107,7 @@ public class PlataformsScript : MonoBehaviour
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(0, peso_velocidade);
         }
-        else if(comeco.y <= transform.position.y)
+        else if(comeco.y >= transform.position.y)
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(0, -peso_velocidade);
         }
