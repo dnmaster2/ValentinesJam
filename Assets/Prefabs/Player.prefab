@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1043692654543554542}
   - component: {fileID: 1043692654543554530}
   - component: {fileID: 1043692654543554543}
+  - component: {fileID: 388301317}
   m_Layer: 0
   m_Name: Player
   m_TagString: Parede
@@ -100,6 +101,7 @@ MonoBehaviour:
   p2: 0
   velocity: 0
   maxVelocity: 5
+  stopVelocity: 0.25
   jumpHeight: 10
   counter: 0.2
   totalCount: 0
@@ -110,6 +112,7 @@ MonoBehaviour:
   estaNoChao: 0
   isJumping: 0
   isClimbing: 0
+  comParceiro: 0
 --- !u!50 &1043692654543554530
 Rigidbody2D:
   serializedVersion: 4
@@ -157,6 +160,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &388301317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043692654543554531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b8bfabfe3354374b833bdcb95283bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BuffVelocidade: 0
 --- !u!1 &1043692655960517794
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,24 +4,30 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    //Rigidbody
+    //Rigidbody e bool de players
     Rigidbody2D rb;
     public bool p1, p2;
     //Variaveis Movimento
     public float velocity;
     public float maxVelocity;
     float lado;
+    public float stopVelocity;
     //Variaveis Pulo
     public float jumpHeight;
     public float counter;
     public float totalCount;
     public Transform sensor;
     public LayerMask pulavel;
-    public bool estaNoChao, isJumping, isClimbing;
-
+    public bool estaNoChao, isJumping;
+    //Variaveis escalar
+    public bool isClimbing;
+    //Variaveis Comportamento com Parceiros
+    public bool comParceiro;
+    PartnersFunctionsScript partners;
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        partners = GetComponent<PartnersFunctionsScript>();
         totalCount = counter;
     }
 
@@ -44,9 +50,9 @@ public class PlayerScript : MonoBehaviour
             }
             else
             {
-                if (velocity >= 0.25f)
+                if (velocity >= stopVelocity)
                 {
-                    velocity -= 0.25f;
+                    velocity -= stopVelocity;
                 }
             }
 
@@ -70,6 +76,12 @@ public class PlayerScript : MonoBehaviour
             if (estaNoChao || Input.GetKeyUp(KeyCode.UpArrow))
             {
                 counter = totalCount;
+            }
+
+            if (comParceiro && Input.GetKey(KeyCode.Return))
+            {
+                partners.ResetPartners();
+                comParceiro = false;
             }
         }
 
@@ -114,7 +126,7 @@ public class PlayerScript : MonoBehaviour
                     }
                 }
 
-                if(estaNoChao || Input.GetKeyUp(KeyCode.W))
+                if (estaNoChao || Input.GetKeyUp(KeyCode.W))
                 {
                     counter = totalCount;
                 }
@@ -131,8 +143,14 @@ public class PlayerScript : MonoBehaviour
             }
             if (Input.GetKey(KeyCode.S))
             {
-                rb.velocity = Vector2.down * 5f;              
+                rb.velocity = Vector2.down * 5f;
             }
+        }
+
+        if (comParceiro && Input.GetKey(KeyCode.Q))
+        {
+            partners.ResetPartners();
+            comParceiro = false;
         }
     }
 
@@ -148,10 +166,32 @@ public class PlayerScript : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("Parede") && p2)
+        if (collision.gameObject.CompareTag("Parede") && p2)
         {
             isClimbing = false;
             rb.gravityScale = 2f;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if ((Input.GetKeyDown(KeyCode.Return) && p1) || (Input.GetKeyDown(KeyCode.Q) && p2) && !comParceiro)
+        {
+            if (collision.gameObject.CompareTag("Velocidade"))
+            {
+                partners.ParceiroVelocidadeOn();
+            }
+            if (collision.gameObject.CompareTag("Antiespinho"))
+            {
+
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Velocidade")){
+            comParceiro = true;
         }
     }
 }
