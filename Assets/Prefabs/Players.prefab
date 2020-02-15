@@ -45,11 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joints: []
-  noCordaoPlayer1: {fileID: 0}
-  noCordaoPlayer2: {fileID: 0}
-  player1: {fileID: 0}
-  player2: {fileID: 0}
-  lr: {fileID: 0}
   forcaPuxar: 2
 --- !u!120 &2966471926585989001
 LineRenderer:
@@ -161,6 +156,7 @@ GameObject:
   - component: {fileID: 5583868762550857064}
   - component: {fileID: 5583868762550857067}
   - component: {fileID: 5583868762550857065}
+  - component: {fileID: 2918604801483127510}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Player2
@@ -327,6 +323,19 @@ DistanceJoint2D:
   m_AutoConfigureDistance: 0
   m_Distance: 1
   m_MaxDistanceOnly: 0
+--- !u!114 &2918604801483127510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5583868762550857063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b8bfabfe3354374b833bdcb95283bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BuffVelocidade: 2
 --- !u!1 &5583868763657553893
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,6 +515,7 @@ GameObject:
   - component: {fileID: 7428096380263508817}
   - component: {fileID: 7428096380263508828}
   - component: {fileID: 7428096380263508827}
+  - component: {fileID: 8178178118301318187}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -672,6 +682,19 @@ DistanceJoint2D:
   m_AutoConfigureDistance: 0
   m_Distance: 1
   m_MaxDistanceOnly: 0
+--- !u!114 &8178178118301318187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7428096380263508816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b8bfabfe3354374b833bdcb95283bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BuffVelocidade: 2
 --- !u!1 &7428096380381682422
 GameObject:
   m_ObjectHideFlags: 0
