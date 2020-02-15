@@ -7,6 +7,7 @@ TagManager:
   - Parede
   - Player2
   - Velocidade
+  - "Ch\xE3o"
   layers:
   - Default
   - TransparentFX

@@ -4,17 +4,28 @@ using UnityEngine;
 
 public class PlataformsScript : MonoBehaviour
 {
+    [Header("Plataforma Movel")]
+    [Space]
     public bool movel;
     public float movel_distancia;
     public float movel_velocidade = 1;
     Vector2 destinoMovel, comeco;
+    [Header("Espinhos")]
+    [Space]
     public bool espinhos;
-
+    [Header("Parede esmagadora")]
+    [Space]
     public bool esmaga;
     public float esmaga_velocidade;
     public float esmaga_distancia;
     Vector2 destinoEsmaga;
+    [Header("Plataforma de Peso")]
+    [Space]
     public bool peso;
+    public float peso_distancia;
+    public float peso_velocidade;
+    Vector2 destinoPeso;
+    bool pisado;
     
 
     private void Start()
@@ -22,6 +33,7 @@ public class PlataformsScript : MonoBehaviour
         comeco = transform.position;
         destinoMovel = new Vector2(transform.position.x + movel_distancia, transform.position.y);
         destinoEsmaga = new Vector2(transform.position.x, transform.position.y + esmaga_distancia);
+        destinoPeso = new Vector2(transform.position.x, transform.position.y + peso_distancia);
     }
     private void OnDrawGizmosSelected()
     {
@@ -32,8 +44,13 @@ public class PlataformsScript : MonoBehaviour
         }
         if (esmaga)
         {
-            Gizmos.color = Color.green;
-            Gizmos.DrawLine(transform.position, new Vector3(transform.position.x, transform.position.y + esmaga_distancia, 0));          
+            Gizmos.color = Color.red;
+            Gizmos.DrawLine(transform.position, new Vector3(transform.position.x, transform.position.y + esmaga_distancia, 0));
+        }
+        if (peso)
+        {
+            Gizmos.color = Color.blue;
+            Gizmos.DrawLine(transform.position, new Vector3(transform.position.x, transform.position.y + peso_distancia, 0));
         }
     }
 
@@ -49,7 +66,20 @@ public class PlataformsScript : MonoBehaviour
 
         if (peso)
         {
+            pisado = true;
+        }
 
+        if (collision.gameObject.CompareTag("Chão"))
+        {
+            esmaga_velocidade *= -1;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (peso)
+        {
+            pisado = false;
         }
     }
 
@@ -68,18 +98,18 @@ public class PlataformsScript : MonoBehaviour
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(0, esmaga_velocidade);
         }
-        else if(esmaga && transform.position.y <= destinoEsmaga.y)
+        else if (esmaga && transform.position.y <= destinoEsmaga.y)
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(0, -esmaga_velocidade);
         }
 
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Chão"))
+        if (pisado)
         {
-            esmaga_velocidade *= -1;
+            GetComponent<Rigidbody2D>().velocity = new Vector2(0, peso_velocidade);
+        }
+        else if(comeco.y >= transform.position.y)
+        {
+            GetComponent<Rigidbody2D>().velocity = new Vector2(0, -peso_velocidade);
         }
     }
 }
