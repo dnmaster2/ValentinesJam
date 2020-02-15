@@ -14,7 +14,7 @@ public class PlayerScript : MonoBehaviour
     //Variaveis Pulo
     public float jumpHeight;
     public float counter;
-    float totalCount;
+    public float totalCount;
     public Transform sensor;
     public LayerMask pulavel;
     public bool estaNoChao, isJumping, isClimbing;
@@ -51,12 +51,11 @@ public class PlayerScript : MonoBehaviour
             }
 
             estaNoChao = Physics2D.OverlapCircle(sensor.position, .15f, pulavel);
-            isJumping = (rb.velocity.y != 0f);
+            isJumping = !estaNoChao;
 
             if (estaNoChao && Input.GetKeyDown(KeyCode.UpArrow))
             {
                 rb.velocity = transform.up * jumpHeight;
-                counter = totalCount;
             }
 
             if (isJumping && Input.GetKey(KeyCode.UpArrow))
@@ -66,6 +65,11 @@ public class PlayerScript : MonoBehaviour
                     rb.velocity = transform.up * jumpHeight;
                     counter -= Time.deltaTime;
                 }
+            }
+
+            if (estaNoChao || Input.GetKeyUp(KeyCode.UpArrow))
+            {
+                counter = totalCount;
             }
         }
 
@@ -94,12 +98,11 @@ public class PlayerScript : MonoBehaviour
             if (!isClimbing)
             {
                 estaNoChao = Physics2D.OverlapCircle(sensor.position, .15f, pulavel);
-                isJumping = (rb.velocity.y != 0f);
+                isJumping = !estaNoChao;
 
                 if (estaNoChao && Input.GetKeyDown(KeyCode.W))
                 {
                     rb.velocity = transform.up * jumpHeight;
-                    counter = totalCount;
                 }
 
                 if (isJumping && Input.GetKey(KeyCode.W))
@@ -109,6 +112,11 @@ public class PlayerScript : MonoBehaviour
                         rb.velocity = transform.up * jumpHeight;
                         counter -= Time.deltaTime;
                     }
+                }
+
+                if(estaNoChao || Input.GetKeyUp(KeyCode.W))
+                {
+                    counter = totalCount;
                 }
             }
         }
@@ -130,10 +138,11 @@ public class PlayerScript : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (Input.GetKeyDown(KeyCode.S) && collision.gameObject.CompareTag("Parede") && p2)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && collision.gameObject.CompareTag("Parede") && p2)
         {
             print("opaaa");
             isClimbing = true;
+            rb.velocity = Vector2.zero;
         }
     }
 
@@ -142,7 +151,7 @@ public class PlayerScript : MonoBehaviour
         if(collision.gameObject.CompareTag("Parede") && p2)
         {
             isClimbing = false;
-            rb.gravityScale = 1f;
+            rb.gravityScale = 2f;
         }
     }
 }

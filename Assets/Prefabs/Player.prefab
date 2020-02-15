@@ -100,8 +100,9 @@ MonoBehaviour:
   p2: 0
   velocity: 0
   maxVelocity: 5
-  jumpHeight: 5
+  jumpHeight: 10
   counter: 0.2
+  totalCount: 0
   sensor: {fileID: 1043692655960517805}
   pulavel:
     serializedVersion: 2
@@ -124,7 +125,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -180,7 +181,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1043692655960517794}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.59, z: 0}
+  m_LocalPosition: {x: 0, y: -0.71999997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1043692654543554540}
