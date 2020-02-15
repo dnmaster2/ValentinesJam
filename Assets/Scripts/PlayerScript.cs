@@ -7,6 +7,7 @@ public class PlayerScript : MonoBehaviour
     //Rigidbody e bool de players
     Rigidbody2D rb;
     public bool p1, p2;
+    Color corzinha;
     //Variaveis Movimento
     public float velocity;
     public float maxVelocity;
@@ -29,6 +30,7 @@ public class PlayerScript : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         partners = GetComponent<PartnersFunctionsScript>();
         totalCount = counter;
+        corzinha = new Color(0.4185208f, 0.7152144f, 0.9339623f);
     }
 
     void Update()
@@ -160,6 +162,7 @@ public class PlayerScript : MonoBehaviour
         {
             print("opaaa");
             isClimbing = true;
+            GetComponent<SpriteRenderer>().color = new Color(0.1921569f, 0.3294118f, 0.4313726f);
             rb.velocity = Vector2.zero;
         }
     }
@@ -170,6 +173,7 @@ public class PlayerScript : MonoBehaviour
         {
             isClimbing = false;
             rb.gravityScale = 2f;
+            GetComponent<SpriteRenderer>().color = corzinha;
         }
     }
 
