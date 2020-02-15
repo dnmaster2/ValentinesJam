@@ -5,14 +5,10 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Menus : MonoBehaviour
-{
-    void Start()
+{    
+    public void MainMenu()
     {
-        
-    }
-    void Update()
-    {
-        
+        SceneManager.LoadScene(0);
     }
     public void StartButton()
     {
