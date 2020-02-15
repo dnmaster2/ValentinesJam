@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 562827006331417700}
   - component: {fileID: 562827006331417704}
   - component: {fileID: 562827006331417701}
-  - component: {fileID: 562827006331417698}
   - component: {fileID: 1462516119674327388}
   m_Layer: 0
   m_Name: Player
@@ -162,25 +161,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!232 &562827006331417698
-DistanceJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 562827006331417705}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 562827006469342669}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0, y: 0}
-  m_AutoConfigureDistance: 0
-  m_Distance: 1
-  m_MaxDistanceOnly: 0
 --- !u!114 &1462516119674327388
 MonoBehaviour:
   m_ObjectHideFlags: 0
