@@ -5,9 +5,9 @@ using UnityEngine;
 public class ControleCordao : MonoBehaviour
 {
     public List<DistanceJoint2D> joints;
-    public Rigidbody2D noCordaoPlayer1, noCordaoPlayer2;
-    public GameObject player1, player2;
-    public LineRenderer lr;
+    Rigidbody2D noCordaoPlayer1, noCordaoPlayer2;
+    GameObject player1, player2;
+    LineRenderer lr;
     public float forcaPuxar;
     void Start()
     {
@@ -26,18 +26,37 @@ public class ControleCordao : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K))
+        //player2 controla a corda (esquerda)
+        if (Input.GetKeyDown(KeyCode.CapsLock))
         {
             AtivarCordao();
+            player2.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
         }
-        if (Input.GetKey(KeyCode.K))
+        if (Input.GetKey(KeyCode.CapsLock))
         {
             joints[0].distance -= forcaPuxar * Time.deltaTime;
             joints[1].distance -= forcaPuxar * Time.deltaTime;
         }
-        if (Input.GetKeyUp(KeyCode.K))
+        if (Input.GetKeyUp(KeyCode.CapsLock))
         {
             AtivarCordao();
+            player2.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
+        //player1 controla a corda (direita)
+        if (Input.GetKeyDown(KeyCode.RightControl))
+        {
+            AtivarCordao();
+            player1.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+        }
+        if (Input.GetKey(KeyCode.RightControl))
+        {            
+            joints[0].distance -= forcaPuxar * Time.deltaTime;
+            joints[1].distance -= forcaPuxar * Time.deltaTime;
+        }
+        if (Input.GetKeyUp(KeyCode.RightControl))
+        {
+            AtivarCordao();
+            player1.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
         }
         RenderLine();
     }
