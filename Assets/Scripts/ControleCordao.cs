@@ -5,9 +5,9 @@ using UnityEngine;
 public class ControleCordao : MonoBehaviour
 {
     public List<DistanceJoint2D> joints;
-    public Rigidbody2D noCordaoPlayer1, noCordaoPlayer2;
-    public GameObject player1, player2;
-    public LineRenderer lr;
+    Rigidbody2D noCordaoPlayer1, noCordaoPlayer2;
+    GameObject player1, player2;
+    LineRenderer lr;
     public float forcaPuxar;
     void Start()
     {
