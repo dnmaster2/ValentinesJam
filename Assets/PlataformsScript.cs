@@ -6,6 +6,7 @@ public class PlataformsScript : MonoBehaviour
 {
     [Header("Plataforma Movel")]
     [Space]
+    Rigidbody2D rb;
     public bool movel;
     public float movel_distancia;
     public float movel_velocidade = 1;
@@ -30,10 +31,14 @@ public class PlataformsScript : MonoBehaviour
 
     private void Start()
     {
-        comeco = transform.position;
-        destinoMovel = new Vector2(transform.position.x + movel_distancia, transform.position.y);
-        destinoEsmaga = new Vector2(transform.position.x, transform.position.y + esmaga_distancia);
-        destinoPeso = new Vector2(transform.position.x, transform.position.y + peso_distancia);
+        if (!espinhos)
+        {
+            rb = GetComponent<Rigidbody2D>();
+            comeco = transform.position;
+            destinoMovel = new Vector2(transform.position.x + movel_distancia, transform.position.y);
+            destinoEsmaga = new Vector2(transform.position.x, transform.position.y + esmaga_distancia);
+            destinoPeso = new Vector2(transform.position.x, transform.position.y + peso_distancia);
+        }       
     }
     private void OnDrawGizmosSelected()
     {
@@ -87,29 +92,33 @@ public class PlataformsScript : MonoBehaviour
     {
         if (movel && transform.position.x <= comeco.x)
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(movel_velocidade, 0);
+            rb.velocity = new Vector2(movel_velocidade, 0);
         }
         else if (movel && transform.position.x >= destinoMovel.x)
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(-movel_velocidade, 0);
+            rb.velocity = new Vector2(-movel_velocidade, 0);
         }
 
         if (esmaga && transform.position.y >= comeco.y)
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(0, esmaga_velocidade);
+            rb.velocity = new Vector2(0, esmaga_velocidade);
         }
         else if (esmaga && transform.position.y <= destinoEsmaga.y)
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(0, -esmaga_velocidade);
+            rb.velocity = new Vector2(0, -esmaga_velocidade);
         }
 
-        if (pisado)
+        if (pisado && transform.position.y >= destinoPeso.y)
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(0, peso_velocidade);
+            rb.velocity = new Vector2(0, peso_velocidade);
         }
-        else if(comeco.y >= transform.position.y)
+        else if(pisado)
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(0, -peso_velocidade);
+            rb.velocity = Vector2.zero;
+        }
+        else if (!pisado && transform.position.y <= destinoPeso.y)
+        {
+            rb.velocity = new Vector2(0, -peso_velocidade);
         }
     }
 }
