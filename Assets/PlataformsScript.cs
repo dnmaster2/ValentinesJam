@@ -6,32 +6,11 @@ public class PlataformsScript : MonoBehaviour
 {
     public bool movel;
     public float movel_distancia;
-    Vector2 direcao, origem;
+    public bool espinhos;
+    public bool esmaga;
+    public bool peso;
 
-    private void Start()
-    {
-        origem = transform.position;
-        direcao = new Vector2(transform.position.x + movel_distancia, transform.position.y);
-    }
-
-    void Update()
-    {       
-        if (movel)
-        {
-            if (transform.position.x > direcao.x)
-            {
-                print("voltano");
-                transform.Translate(Vector2.left * Time.deltaTime);
-            }
-
-            if (transform.position.x < direcao.x)
-            {
-                print("ino");
-                transform.Translate(Vector2.right * Time.deltaTime);
-            }
-        }
-    }
-
+    
     private void OnDrawGizmosSelected()
     {
         if (movel)
@@ -39,5 +18,26 @@ public class PlataformsScript : MonoBehaviour
             Gizmos.DrawLine(transform.position, new Vector3(transform.position.x + movel_distancia, transform.position.y, 0));
             Gizmos.color = Color.green;
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (espinhos || esmaga)
+        {
+            if (!collision.gameObject.CompareTag("Chão"))
+            {
+                Destroy(collision.gameObject);
+            }
+        }
+
+        if (peso)
+        {
+
+        }
+    }
+
+    private void Update()
+    {
+        if(transform.position.x > )
     }
 }
