@@ -11,6 +11,7 @@ public class CameraScript : MonoBehaviour
     Vector3 velocity;
     float smoothTime = .2f;
     Camera cam;
+    bool gameOver;
 
     private void Awake()
     {
@@ -18,9 +19,23 @@ public class CameraScript : MonoBehaviour
     }
     void LateUpdate()
     {
-        transform.position = Vector3.SmoothDamp(transform.position, GetCenterPoint() + ajuste, ref velocity, smoothTime);
-        float actualZoom = Mathf.Lerp(zoomMinimo, zoomMaximo, GetDistancePoint() / limiteZoom);
-        cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, actualZoom, Time.deltaTime);
+        if (targets.Count < 2)
+        {
+            print("Game Over aqui!!!");
+
+        }
+        if (!gameOver)
+        {
+            transform.position = Vector3.SmoothDamp(transform.position, GetCenterPoint() + ajuste, ref velocity, smoothTime);
+            float actualZoom = Mathf.Lerp(zoomMinimo, zoomMaximo, GetDistancePoint() / limiteZoom);
+            cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, actualZoom, Time.deltaTime);
+        }
+        else
+        {
+            cam.orthographicSize = 5f;
+            transform.position = targets[0].position;
+        }
+        
     }
 
     Vector3 GetCenterPoint()
