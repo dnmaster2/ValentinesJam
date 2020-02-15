@@ -9,6 +9,7 @@ public class ControleCordao : MonoBehaviour
     GameObject player1, player2;
     LineRenderer lr;
     public float forcaPuxar;
+    public float distanciaMaxPuxar = 20;
     void Start()
     {
         joints.Add(GameObject.Find("NoCordaoPlayer1").GetComponent<DistanceJoint2D>());
@@ -26,37 +27,40 @@ public class ControleCordao : MonoBehaviour
     
     void Update()
     {
-        //player2 controla a corda (esquerda)
-        if (Input.GetKeyDown(KeyCode.CapsLock))
+        if (Vector2.Distance(player1.transform.position, player2.transform.position) <= distanciaMaxPuxar)
         {
-            AtivarCordao();
-            player2.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
-        }
-        if (Input.GetKey(KeyCode.CapsLock))
-        {
-            joints[0].distance -= forcaPuxar * Time.deltaTime;
-            joints[1].distance -= forcaPuxar * Time.deltaTime;
-        }
-        if (Input.GetKeyUp(KeyCode.CapsLock))
-        {
-            AtivarCordao();
-            player2.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
-        }
-        //player1 controla a corda (direita)
-        if (Input.GetKeyDown(KeyCode.RightShift))
-        {
-            AtivarCordao();
-            player1.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
-        }
-        if (Input.GetKey(KeyCode.RightShift))
-        {            
-            joints[0].distance -= forcaPuxar * Time.deltaTime;
-            joints[1].distance -= forcaPuxar * Time.deltaTime;
-        }
-        if (Input.GetKeyUp(KeyCode.RightShift))
-        {
-            AtivarCordao();
-            player1.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+            //player2 controla a corda (esquerda)
+            if (Input.GetKeyDown(KeyCode.CapsLock))
+            {
+                AtivarCordao();
+                player2.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+            }
+            if (Input.GetKey(KeyCode.CapsLock))
+            {
+                joints[0].distance -= forcaPuxar * Time.deltaTime;
+                joints[1].distance -= forcaPuxar * Time.deltaTime;
+            }
+            if (Input.GetKeyUp(KeyCode.CapsLock))
+            {
+                AtivarCordao();
+                player2.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+            }
+            //player1 controla a corda (direita)
+            if (Input.GetKeyDown(KeyCode.RightShift))
+            {
+                AtivarCordao();
+                player1.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+            }
+            if (Input.GetKey(KeyCode.RightShift))
+            {
+                joints[0].distance -= forcaPuxar * Time.deltaTime;
+                joints[1].distance -= forcaPuxar * Time.deltaTime;
+            }
+            if (Input.GetKeyUp(KeyCode.RightShift))
+            {
+                AtivarCordao();
+                player1.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+            }
         }
         RenderLine();
     }
