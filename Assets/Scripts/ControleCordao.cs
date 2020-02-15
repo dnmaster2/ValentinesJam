@@ -43,17 +43,17 @@ public class ControleCordao : MonoBehaviour
             player2.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
         }
         //player1 controla a corda (direita)
-        if (Input.GetKeyDown(KeyCode.RightControl))
+        if (Input.GetKeyDown(KeyCode.RightShift))
         {
             AtivarCordao();
             player1.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
         }
-        if (Input.GetKey(KeyCode.RightControl))
+        if (Input.GetKey(KeyCode.RightShift))
         {            
             joints[0].distance -= forcaPuxar * Time.deltaTime;
             joints[1].distance -= forcaPuxar * Time.deltaTime;
         }
-        if (Input.GetKeyUp(KeyCode.RightControl))
+        if (Input.GetKeyUp(KeyCode.RightShift))
         {
             AtivarCordao();
             player1.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
