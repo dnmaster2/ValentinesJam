@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Parede
   - Player2
+  - Velocidade
   layers:
   - Default
   - TransparentFX

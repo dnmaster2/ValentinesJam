@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9552dad2ccf4adc4c83056c99adb4a56, type: 3}
-  m_Color: {r: 0.8584906, g: 0.1822268, b: 0.1822268, a: 1}
+  m_Color: {r: 0.8490566, g: 0.25231397, b: 0.7345498, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -102,7 +102,7 @@ MonoBehaviour:
   p2: 0
   velocity: 0
   maxVelocity: 5
-  stopVelocity: 0
+  stopVelocity: 0.25
   jumpHeight: 5
   counter: 0.2
   totalCount: 0
