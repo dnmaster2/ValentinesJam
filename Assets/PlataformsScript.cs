@@ -26,7 +26,7 @@ public class PlataformsScript : MonoBehaviour
     public float peso_distancia;
     public float peso_velocidade;
     Vector2 destinoPeso;
-    bool pisado;
+    public bool pisado;
     
 
     private void Start()
@@ -90,35 +90,34 @@ public class PlataformsScript : MonoBehaviour
 
     private void Update()
     {
-        if (movel && transform.position.x <= comeco.x)
+        if (!espinhos)
         {
-            rb.velocity = new Vector2(movel_velocidade, 0);
-        }
-        else if (movel && transform.position.x >= destinoMovel.x)
-        {
-            rb.velocity = new Vector2(-movel_velocidade, 0);
-        }
+            if (movel && transform.position.x <= comeco.x)
+            {
+                rb.velocity = new Vector2(movel_velocidade, 0);
+            }
+            else if (movel && transform.position.x >= destinoMovel.x)
+            {
+                rb.velocity = new Vector2(-movel_velocidade, 0);
+            }
 
-        if (esmaga && transform.position.y >= comeco.y)
-        {
-            rb.velocity = new Vector2(0, esmaga_velocidade);
-        }
-        else if (esmaga && transform.position.y <= destinoEsmaga.y)
-        {
-            rb.velocity = new Vector2(0, -esmaga_velocidade);
-        }
+            if (esmaga && transform.position.y >= comeco.y)
+            {
+                rb.velocity = new Vector2(0, esmaga_velocidade);
+            }
+            else if (esmaga && transform.position.y <= destinoEsmaga.y)
+            {
+                rb.velocity = new Vector2(0, -esmaga_velocidade);
+            }
 
-        if (pisado && transform.position.y >= destinoPeso.y)
-        {
-            rb.velocity = new Vector2(0, peso_velocidade);
-        }
-        else if(pisado)
-        {
-            rb.velocity = Vector2.zero;
-        }
-        else if (!pisado && transform.position.y <= destinoPeso.y)
-        {
-            rb.velocity = new Vector2(0, -peso_velocidade);
-        }
+            if (pisado && transform.position.y >= destinoPeso.y)
+            {
+                rb.velocity = new Vector2(0, peso_velocidade);
+            }
+            else if (pisado)
+            {
+                rb.velocity = Vector2.zero;
+            }
+        }        
     }
 }
