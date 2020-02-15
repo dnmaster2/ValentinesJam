@@ -112,5 +112,13 @@ public class PlataformsScript : MonoBehaviour
         {
             rb.velocity = new Vector2(0, peso_velocidade);
         }
+        else if(pisado)
+        {
+            rb.velocity = Vector2.zero;
+        }
+        else if (!pisado && transform.position.y <= destinoPeso.y)
+        {
+            rb.velocity = new Vector2(0, -peso_velocidade);
+        }
     }
 }
