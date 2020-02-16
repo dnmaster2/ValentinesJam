@@ -67,7 +67,7 @@ public class PlataformsScript : MonoBehaviour
     {
         if (espinhos || esmaga)
         {
-            if (!collision.gameObject.CompareTag("Chão"))
+            if (!collision.gameObject.CompareTag("Chão") && collision.gameObject.name != "Antiespinho")
             {
                 Destroy(collision.gameObject);
             }

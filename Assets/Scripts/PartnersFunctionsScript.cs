@@ -9,6 +9,7 @@ public class PartnersFunctionsScript : MonoBehaviour
     SpriteRenderer sprite;
     float tempVelocity;
     Color color;
+    public List<GameObject> parceirosMontados;
 
     private void Awake()
     {
@@ -17,14 +18,25 @@ public class PartnersFunctionsScript : MonoBehaviour
         color = sprite.color;
         tempVelocity = player.maxVelocity;
     }
-    public void ParceiroVelocidadeOn()
-    {        
-        sprite.color = Color.green;        
+    public IEnumerator ParceiroVelocidadeOn()
+    {
+        sprite.color = Color.green;
         player.maxVelocity += BuffVelocidade;
+        yield return new WaitForSeconds(0.1f);
+        player.comParceiro = true;
     }
-    public void ResetPartners()
+    public IEnumerator ParceiroAntiespinhoOn()
+    {
+        sprite.color = Color.white;
+        gameObject.name = "Antiespinho";
+        yield return new WaitForSeconds(0.1f);
+        player.comParceiro = true;
+    }
+
+    public void ResetPartners(int index, Vector2 spawn)
     {
         player.maxVelocity = tempVelocity;
         sprite.color = color;
+        Instantiate(parceirosMontados[index], spawn, Quaternion.identity);
     }
 }

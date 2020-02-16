@@ -30,9 +30,11 @@ public class PlayerScript : MonoBehaviour
     //Variaveis Comportamento com Parceiros
     public bool comParceiro;
     PartnersFunctionsScript partners;
+    int index;
 
     //Variaveis para vitória/derrota
     public static int playersNaSaida;
+    public int thisIndex;
 
     void Awake()
     {
@@ -40,13 +42,14 @@ public class PlayerScript : MonoBehaviour
         partners = GetComponent<PartnersFunctionsScript>();
         totalCount = counter;
         corzinha = new Color(0.4185208f, 0.7152144f, 0.9339623f);
+        thisIndex = SceneManager.GetActiveScene().buildIndex;
     }
 
     void Update()
     {
         if (playersNaSaida == 2)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene(thisIndex + 1);
         }
 
         rb.velocity = new Vector2(lado * velocity, rb.velocity.y);
@@ -96,8 +99,9 @@ public class PlayerScript : MonoBehaviour
 
             if (comParceiro && Input.GetKey(KeyCode.Return))
             {
-                partners.ResetPartners();
+                partners.ResetPartners(index, new Vector2(transform.position.x + 1, transform.position.y + 1));
                 comParceiro = false;
+                gameObject.name = "Player";
             }
         }
 
@@ -165,8 +169,10 @@ public class PlayerScript : MonoBehaviour
 
         if (comParceiro && Input.GetKey(KeyCode.Q))
         {
-            partners.ResetPartners();
+            float direction = -Input.GetAxisRaw("Horizontal2");
+            partners.ResetPartners(index, new Vector2(transform.position.x + direction, transform.position.y + direction));
             comParceiro = false;
+            gameObject.name = "Player2";
         }
     }
 
@@ -204,22 +210,21 @@ public class PlayerScript : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("Velocidade"))
             {
-                partners.ParceiroVelocidadeOn();
+                StartCoroutine(partners.ParceiroVelocidadeOn());
+                index = 1;
                 return;
             }
             if (collision.gameObject.CompareTag("Antiespinho"))
             {
-
+                StartCoroutine(partners.ParceiroAntiespinhoOn());
+                index = 0;
+                return;
             }
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Velocidade"))
-        {
-            comParceiro = true;
-        }
         if (other.CompareTag("Espelho"))
         {
             playersNaSaida--;
