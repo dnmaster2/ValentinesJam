@@ -99,7 +99,10 @@ public class PlayerScript : MonoBehaviour
                 playerAnimation.Jump();
                 rb.velocity = transform.up * jumpHeight;
             }
-
+            if (Input.GetKeyUp(KeyCode.UpArrow))
+            {
+                playerAnimation.Fall();
+            }
             //O pulo é relativo ao tempo de pressionamento da tecla, quanto mais tempo segura, mais você sobe.
             if (isJumping)
             {
@@ -107,10 +110,6 @@ public class PlayerScript : MonoBehaviour
                 {
                     rb.velocity = transform.up * jumpHeight;
                     counter -= Time.deltaTime;
-                }
-                else
-                {
-                    playerAnimation.Fall();
                 }
             }
             //Reinicio do contador que trava o pulo carregado
@@ -169,17 +168,18 @@ public class PlayerScript : MonoBehaviour
                     rb.velocity = transform.up * jumpHeight;
                 }
 
-                //O pulo é relativo ao tempo de pressionamento da tecla, quanto mais tempo segura, mais você sobe.
-                if (isJumping && Input.GetKey(KeyCode.W))
+                if (Input.GetKeyUp(KeyCode.W))
                 {
-                    if (counter > 0)
+                    playerAnimation.Fall();
+                }
+
+                //O pulo é relativo ao tempo de pressionamento da tecla, quanto mais tempo segura, mais você sobe.
+                if (isJumping)
+                {
+                    if (counter > 0 && Input.GetKey(KeyCode.W))
                     {
                         rb.velocity = transform.up * jumpHeight;
                         counter -= Time.deltaTime;
-                    }
-                    else
-                    {
-                        playerAnimation.Fall();
                     }
                 }
 
