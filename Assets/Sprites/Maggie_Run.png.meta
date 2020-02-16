@@ -1,0 +1,439 @@
+fileFormatVersion: 2
+guid: a8f192875e05c224aa6e2f279c2c33c2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5002364927128129439
+    second: Maggie_Run_0
+  - first:
+      213: -5530091824406325692
+    second: Maggie_Run_1
+  - first:
+      213: 2753731352830413452
+    second: Maggie_Run_2
+  - first:
+      213: 5626832193386400659
+    second: Maggie_Run_3
+  - first:
+      213: -4127835874678249115
+    second: Maggie_Run_4
+  - first:
+      213: 4164100393905585391
+    second: Maggie_Run_5
+  - first:
+      213: -7931282945489924079
+    second: Maggie_Run_6
+  - first:
+      213: 3746063925110681926
+    second: Maggie_Run_7
+  - first:
+      213: 9115171491746315133
+    second: Maggie_Run_8
+  - first:
+      213: 4165684069350492676
+    second: Maggie_Run_9
+  - first:
+      213: 1470012439153271148
+    second: Maggie_Run_10
+  - first:
+      213: -5483886403349731768
+    second: Maggie_Run_11
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Maggie_Run_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 641
+        width: 489
+        height: 641
+      alignment: 9
+      pivot: {x: 0.6346258, y: 0.3644334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef4209779cd31ab46aa3381e6fafb602
+      internalID: -5002364927128129439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maggie_Run_1
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 641
+        width: 489
+        height: 641
+      alignment: 9
+      pivot: {x: 0.6077007, y: 0.36854142}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc2058b8f96e82409bb9b725580c325
+      internalID: -5530091824406325692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maggie_Run_2
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 641
+        width: 489
+        height: 641
+      alignment: 9
+      pivot: {x: 0.629241, y: 0.3644334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bd6685ffd60144429590df43ec229f8
+      internalID: 2753731352830413452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maggie_Run_3
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 641
+        width: 489
+        height: 641
+      alignment: 9
+      pivot: {x: 0.66693604, y: 0.30281207}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca053cc5ff15b084ebd58bee6f2c65d2
+      internalID: 5626832193386400659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maggie_Run_4
+      rect:
+        serializedVersion: 2
+        x: 1956
+        y: 641
+        width: 489
+        height: 641
+      alignment: 9
+      pivot: {x: 0.5700055, y: 0.29870397}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e716a0444dcb34f41977f4b53ca1e623
+      internalID: -4127835874678249115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maggie_Run_5
+      rect:
+        serializedVersion: 2
+        x: 2445
+        y: 641
+        width: 489
+        height: 641
+      alignment: 9
+      pivot: {x: 0.6238557, y: 0.3397848}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb68abfe1500a6a40a398a8bf1940c65
+      internalID: 4164100393905585391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maggie_Run_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 489
+        height: 641
+      alignment: 9
+      pivot: {x: 0.5915456, y: 0.36854145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba40f91a4c1d4fe4caeae97db3441aae
+      internalID: -7931282945489924079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maggie_Run_7
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 0
+        width: 489
+        height: 641
+      alignment: 9
+      pivot: {x: 0.55923545, y: 0.3397849}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50eeac1af3d41f42897efcfae4e9c44
+      internalID: 3746063925110681926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maggie_Run_8
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 0
+        width: 489
+        height: 641
+      alignment: 9
+      pivot: {x: 0.6023159, y: 0.36854145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf6524e8347a1d489b9e942c25f5fa2
+      internalID: 9115171491746315133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maggie_Run_9
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 0
+        width: 489
+        height: 641
+      alignment: 9
+      pivot: {x: 0.66693604, y: 0.3562172}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efcbf62d0f754ae418bddd935a550560
+      internalID: 4165684069350492676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maggie_Run_10
+      rect:
+        serializedVersion: 2
+        x: 1956
+        y: 0
+        width: 489
+        height: 641
+      alignment: 9
+      pivot: {x: 0.6184706, y: 0.343893}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 620ee3ad5cf1fae4eaa97ff460e43851
+      internalID: 1470012439153271148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Maggie_Run_11
+      rect:
+        serializedVersion: 2
+        x: 2445
+        y: 0
+        width: 489
+        height: 641
+      alignment: 9
+      pivot: {x: 0.64115125, y: 0.38067904}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7913cd12460384943878893d0f17b1db
+      internalID: -5483886403349731768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
