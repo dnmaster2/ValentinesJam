@@ -1267,6 +1267,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63e412d450d183644affd2611969bce3, type: 3}
+--- !u!1 &1574886564 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7292639386997331376, guid: 63e412d450d183644affd2611969bce3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1574886563}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1582104957
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3041,7 +3047,7 @@ MonoBehaviour:
   isJumping: 0
   isClimbing: 0
   comParceiro: 0
-  fadeOutAqui: {fileID: 0}
+  fadeOutAqui: {fileID: 1574886564}
   playerAnimation: {fileID: 0}
 --- !u!212 &8083734696716823509
 SpriteRenderer:

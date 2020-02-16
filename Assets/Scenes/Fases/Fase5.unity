@@ -2192,6 +2192,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 263157046}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &263157048 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7292639386997331376, guid: 63e412d450d183644affd2611969bce3,
+    type: 3}
+  m_PrefabInstance: {fileID: 263157046}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &286439940
 GameObject:
   m_ObjectHideFlags: 0
@@ -3917,7 +3923,7 @@ MonoBehaviour:
   isJumping: 0
   isClimbing: 0
   comParceiro: 0
-  fadeOutAqui: {fileID: 0}
+  fadeOutAqui: {fileID: 263157048}
   playerAnimation: {fileID: 0}
 --- !u!1 &7264478237715621286
 GameObject:
