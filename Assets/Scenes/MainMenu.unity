@@ -4409,7 +4409,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Helena "sobrenome"
+  m_Text: Helena Vaz
 --- !u!222 &1549373722
 CanvasRenderer:
   m_ObjectHideFlags: 0

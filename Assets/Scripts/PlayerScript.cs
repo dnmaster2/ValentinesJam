@@ -40,6 +40,7 @@ public class PlayerScript : MonoBehaviour
     public PlayerAnimationScript playerAnimation;
     void Awake()
     {
+        playersNaSaida = 0;
         //Loading dos componentes
         rb = GetComponent<Rigidbody2D>();
         partners = GetComponent<PartnersFunctionsScript>();
@@ -59,7 +60,7 @@ public class PlayerScript : MonoBehaviour
 
         //O Código é beeeem repetitivo pela falta de tempo de otimização.
         //Peço perdão pelo vacilo
-     
+
         //Movimentação base do jogador
         rb.velocity = new Vector2(lado * velocity, rb.velocity.y);
         //Seleção do player um
