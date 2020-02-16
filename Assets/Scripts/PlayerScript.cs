@@ -34,7 +34,8 @@ public class PlayerScript : MonoBehaviour
 
     //Variaveis para vitória/derrota
     public static int playersNaSaida;
-    public int thisIndex;
+    public GameObject fadeOutAqui;
+
     //Variveis de Animação
     public PlayerAnimationScript playerAnimation;
     void Awake()
@@ -46,7 +47,6 @@ public class PlayerScript : MonoBehaviour
         //Registro das variaveis importantes
         totalCount = counter;
         corzinha = new Color(0.4185208f, 0.7152144f, 0.9339623f);
-        thisIndex = SceneManager.GetActiveScene().buildIndex;
     }
 
     void Update()
@@ -54,7 +54,7 @@ public class PlayerScript : MonoBehaviour
         if (playersNaSaida == 2)
         {
             //Detecta se há 2 players na saida, se sim, passa para o proximo nivel
-            SceneManager.LoadScene(thisIndex + 1);
+            fadeOutAqui.SetActive(true);
         }
 
         //O Código é beeeem repetitivo pela falta de tempo de otimização.
