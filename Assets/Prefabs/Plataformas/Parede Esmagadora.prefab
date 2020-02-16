@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7438659924791156536}
   - component: {fileID: 7438659924791156537}
-  - component: {fileID: 7438659924791156519}
   - component: {fileID: 7438659924791156518}
   - component: {fileID: 7438659924791156517}
+  - component: {fileID: 4792185206858345646}
   m_Layer: 0
   m_Name: Parede Esmagadora
   m_TagString: Untagged
@@ -83,28 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7438659924791156519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7438659924791156538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acc24fa568a4bd944bf3a0efe134a284, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movel: 0
-  movel_distancia: 0
-  movel_velocidade: 1
-  espinhos: 0
-  esmaga: 1
-  esmaga_velocidade: -1
-  esmaga_distancia: -6.24
-  peso: 0
-  peso_distancia: 0
-  peso_velocidade: 0
 --- !u!61 &7438659924791156518
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -152,3 +130,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4792185206858345646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7438659924791156538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bdc9d232b71b2143ab21368df78898f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  esmaga_velocidade: -1
+  esmaga_distancia: -6

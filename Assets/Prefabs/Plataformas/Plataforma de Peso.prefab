@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 955982019176737595}
   - component: {fileID: 955982019176737588}
   - component: {fileID: 955982019176737593}
-  - component: {fileID: 955982019176737594}
   - component: {fileID: 955982019176737592}
+  - component: {fileID: 5471250274282454547}
   m_Layer: 0
   m_Name: Plataforma de Peso
   m_TagString: Untagged
@@ -109,28 +109,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &955982019176737594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 955982019176737589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acc24fa568a4bd944bf3a0efe134a284, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movel: 0
-  movel_distancia: 0
-  movel_velocidade: 0
-  espinhos: 0
-  esmaga: 0
-  esmaga_velocidade: 0
-  esmaga_distancia: 0
-  peso: 1
-  peso_distancia: -3.18
-  peso_velocidade: -1
 --- !u!50 &955982019176737592
 Rigidbody2D:
   serializedVersion: 4
@@ -152,3 +130,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5471250274282454547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955982019176737589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7f0293db66dad248ae74f9a8e6038f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  peso_distancia: -3
+  peso_velocidade: -1
+  pisado: 0

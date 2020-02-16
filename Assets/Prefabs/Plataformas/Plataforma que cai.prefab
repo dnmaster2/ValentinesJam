@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8263869076998328119}
   - component: {fileID: 8263869076998328118}
   - component: {fileID: 8263869076998328121}
-  - component: {fileID: 8263869076998328120}
   - component: {fileID: 8263869076998328122}
+  - component: {fileID: 3599301693620520811}
   m_Layer: 0
   m_Name: Plataforma que cai
   m_TagString: Untagged
@@ -109,31 +109,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8263869076998328120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8263869076998328117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acc24fa568a4bd944bf3a0efe134a284, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movel: 0
-  movel_distancia: 0
-  movel_velocidade: 0
-  espinhos: 0
-  esmaga: 0
-  esmaga_velocidade: 0
-  esmaga_distancia: 0
-  peso: 0
-  peso_distancia: 0
-  peso_velocidade: 0
-  pisado: 0
-  cai: 1
-  tempo_cair: 2
 --- !u!50 &8263869076998328122
 Rigidbody2D:
   serializedVersion: 4
@@ -155,3 +130,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3599301693620520811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8263869076998328117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e74e67dc902d245a50fd7fab83b909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tempo_cair: 0

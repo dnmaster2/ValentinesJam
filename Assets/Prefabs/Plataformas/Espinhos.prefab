@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 2317651360562413579}
   - component: {fileID: 2317651360562413578}
   - component: {fileID: 2317651360562413573}
-  - component: {fileID: 2317651360562413572}
   - component: {fileID: 2317651360562413574}
+  - component: {fileID: 487042773}
   m_Layer: 0
   m_Name: Espinhos
   m_TagString: Untagged
@@ -109,28 +109,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2317651360562413572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2317651360562413577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acc24fa568a4bd944bf3a0efe134a284, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movel: 0
-  movel_distancia: 0
-  movel_velocidade: 0
-  espinhos: 1
-  esmaga: 0
-  esmaga_velocidade: 0
-  esmaga_distancia: 0
-  peso: 0
-  peso_distancia: 0
-  peso_velocidade: 0
 --- !u!50 &2317651360562413574
 Rigidbody2D:
   serializedVersion: 4
@@ -152,3 +130,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &487042773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2317651360562413577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f763ab5b20bc964ea6ddf9beedeb196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
