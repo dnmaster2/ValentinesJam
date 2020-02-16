@@ -27,7 +27,11 @@ public class PlataformsScript : MonoBehaviour
     public float peso_velocidade;
     Vector2 destinoPeso;
     public bool pisado;
-    
+    [Header("Plataforma que cai")]
+    [Space]
+    public bool cai;
+    public float tempo_cair;
+
 
     private void Start()
     {
@@ -38,14 +42,14 @@ public class PlataformsScript : MonoBehaviour
             destinoMovel = new Vector2(transform.position.x + movel_distancia, transform.position.y);
             destinoEsmaga = new Vector2(transform.position.x, transform.position.y + esmaga_distancia);
             destinoPeso = new Vector2(transform.position.x, transform.position.y + peso_distancia);
-        }       
+        }
     }
     private void OnDrawGizmosSelected()
     {
         if (movel)
         {
             Gizmos.color = Color.green;
-            Gizmos.DrawLine(transform.position, new Vector3(transform.position.x + movel_distancia, transform.position.y, 0));       
+            Gizmos.DrawLine(transform.position, new Vector3(transform.position.x + movel_distancia, transform.position.y, 0));
         }
         if (esmaga)
         {
@@ -77,6 +81,12 @@ public class PlataformsScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Chão"))
         {
             esmaga_velocidade *= -1;
+        }
+
+        if (cai)
+        {
+            print("rodei");
+            StartCoroutine(TimerQueda());
         }
     }
 
@@ -118,6 +128,15 @@ public class PlataformsScript : MonoBehaviour
             {
                 rb.velocity = Vector2.zero;
             }
-        }        
+        }
+    }
+
+    IEnumerator TimerQueda()
+    {
+        print("rodei de novo");
+        yield return new WaitForSeconds(tempo_cair);
+        print("rodei mais uma vez");
+        rb.bodyType = RigidbodyType2D.Dynamic;
+        rb.gravityScale = 3f;
     }
 }
