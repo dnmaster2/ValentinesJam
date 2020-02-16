@@ -13,7 +13,7 @@ public class PlayerScript : MonoBehaviour
     //Variaveis Movimento
     public float velocity;
     public float maxVelocity;
-    float lado;
+    public float lado;
     public float stopVelocity;
 
     //Variaveis Pulo
@@ -35,12 +35,14 @@ public class PlayerScript : MonoBehaviour
     //Variaveis para vitória/derrota
     public static int playersNaSaida;
     public int thisIndex;
-
+    //Variveis de Animação
+    public PlayerAnimationScript playerAnimation;
     void Awake()
     {
         //Loading dos componentes
         rb = GetComponent<Rigidbody2D>();
         partners = GetComponent<PartnersFunctionsScript>();
+        playerAnimation = GetComponent<PlayerAnimationScript>();
         //Registro das variaveis importantes
         totalCount = counter;
         corzinha = new Color(0.4185208f, 0.7152144f, 0.9339623f);
@@ -54,6 +56,7 @@ public class PlayerScript : MonoBehaviour
             //Detecta se há 2 players na saida, se sim, passa para o proximo nivel
             SceneManager.LoadScene(thisIndex + 1);
         }
+
         //O Código é beeeem repetitivo pela falta de tempo de otimização.
         //Peço perdão pelo vacilo
      
@@ -65,6 +68,7 @@ public class PlayerScript : MonoBehaviour
             //Grava de que lado o input foi registrado
             if (Input.GetButtonDown("Horizontal"))
             {
+                playerAnimation.Walk(true);
                 lado = Input.GetAxisRaw("Horizontal");
             }
             //Aumenta a velocidade gradualmente até o seu maximo.
@@ -78,6 +82,7 @@ public class PlayerScript : MonoBehaviour
             //Freia o personagem aos poucos, deixando um controle em o quão rapido ele pode parar
             else
             {
+                playerAnimation.Walk(false);
                 if (velocity >= stopVelocity)
                 {
                     velocity -= stopVelocity;
@@ -91,16 +96,21 @@ public class PlayerScript : MonoBehaviour
             //Instrução do pulo
             if (estaNoChao && Input.GetKeyDown(KeyCode.UpArrow))
             {
+                playerAnimation.Jump();
                 rb.velocity = transform.up * jumpHeight;
             }
 
             //O pulo é relativo ao tempo de pressionamento da tecla, quanto mais tempo segura, mais você sobe.
-            if (isJumping && Input.GetKey(KeyCode.UpArrow))
+            if (isJumping)
             {
-                if (counter > 0)
+                if (counter > 0 && Input.GetKey(KeyCode.UpArrow))
                 {
                     rb.velocity = transform.up * jumpHeight;
                     counter -= Time.deltaTime;
+                }
+                else
+                {
+                    playerAnimation.Fall();
                 }
             }
             //Reinicio do contador que trava o pulo carregado
@@ -122,6 +132,7 @@ public class PlayerScript : MonoBehaviour
             //Grava de que lado o input foi registrado
             if (Input.GetButtonDown("Horizontal2"))
             {
+                playerAnimation.Walk(true);
                 lado = Input.GetAxisRaw("Horizontal2");
             }
 
@@ -136,6 +147,7 @@ public class PlayerScript : MonoBehaviour
             //Freia o personagem aos poucos, deixando um controle em o quão rapido ele pode parar
             else
             {
+                playerAnimation.Walk(false);
                 if (velocity >= 0.25f)
                 {
                     velocity -= 0.25f;
@@ -153,6 +165,7 @@ public class PlayerScript : MonoBehaviour
                 //Instrução do pulo
                 if (estaNoChao && Input.GetKeyDown(KeyCode.W))
                 {
+                    playerAnimation.Jump();
                     rb.velocity = transform.up * jumpHeight;
                 }
 
@@ -163,6 +176,10 @@ public class PlayerScript : MonoBehaviour
                     {
                         rb.velocity = transform.up * jumpHeight;
                         counter -= Time.deltaTime;
+                    }
+                    else
+                    {
+                        playerAnimation.Fall();
                     }
                 }
 
@@ -206,6 +223,14 @@ public class PlayerScript : MonoBehaviour
         if (other.CompareTag("Espelho"))
         {
             playersNaSaida++;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Chão"))
+        {
+            playerAnimation.Land();
         }
     }
     private void OnCollisionStay2D(Collision2D collision)

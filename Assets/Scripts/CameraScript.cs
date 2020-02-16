@@ -11,8 +11,7 @@ public class CameraScript : MonoBehaviour
     Vector3 velocity;
     float smoothTime = .2f;
     Camera cam;
-    bool gameOver;
-    public GameObject gameOverPrefab;
+    public string target1, target2;
 
     //Load
     private void Awake()
@@ -22,40 +21,35 @@ public class CameraScript : MonoBehaviour
     //Procura os dois jogadores
     private void Start()
     {
-        targets.Add(GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>());
-        targets.Add(GameObject.FindGameObjectWithTag("Player2").GetComponent<Transform>());
+        targets.Add(GameObject.FindGameObjectWithTag(target1).GetComponent<Transform>());
+        targets.Add(GameObject.FindGameObjectWithTag(target2).GetComponent<Transform>());
     }
     void LateUpdate()
     {
         //Se algum dos targets for nulo, ele o remove da lista
-        foreach(Transform target in targets)
+        for (int i = 0; i < targets.Count; i++)
         {
-            if(target == null)
+            if (targets[i] == null)
             {
-                targets.Remove(target);
+                targets.Remove(targets[i]);
             }
         }
         //Se for menor que 2, provavelmente um morreu e o jogo acabou.
-        if (targets.Count < 2)
+        if (targets.Count >= 2)
         {
-            gameOverPrefab.SetActive(true);
-        }
-        //Comandos da camera
-        if (!gameOver)
-        {
+            //Comandos da camera
             //Smoothdamp para movimento suave, usando um calculo do ponto central entre os dois players 
             transform.position = Vector3.SmoothDamp(transform.position, GetCenterPoint() + ajuste, ref velocity, smoothTime);
             //Dois lerps para interpolar o zoom maximo e minimo da camera com um limitador
             float actualZoom = Mathf.Lerp(zoomMinimo, zoomMaximo, GetDistancePoint() / limiteZoom);
             cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, actualZoom, Time.deltaTime);
         }
-        else
+        else if(targets.Count < 2)
         {
             //Em caso de game over, ele retorna para um dos players e fixa o zoom
             cam.orthographicSize = 5f;
-            transform.position = targets[0].position;
-        }
-        
+            transform.position = targets[0].position + ajuste;
+        }        
     }
 
     Vector3 GetCenterPoint()
