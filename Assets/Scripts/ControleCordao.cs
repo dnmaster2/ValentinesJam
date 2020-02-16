@@ -17,6 +17,8 @@ public class ControleCordao : MonoBehaviour
     public float forcaPuxar;
     //distancia maxima que um jogador pode puxar o outro
     public float distanciaMaxPuxar = 20;
+    //booleanda para fazer só uma vez isso
+    public bool controleDesativar = false;
     #endregion
 
 
@@ -40,54 +42,81 @@ public class ControleCordao : MonoBehaviour
     
     void Update()
     {
-        //verifica se a distancia entre os jogadores é maior que a distancia maxima(escolhida)
-        if (Vector2.Distance(player1.transform.position, player2.transform.position) <= distanciaMaxPuxar)
+        if (player1 != null && player2 != null)
         {
-            //player2 controla a corda (esquerda)
-            if (Input.GetKeyDown(KeyCode.CapsLock))
+            //verifica se a distancia entre os jogadores é maior que a distancia maxima(escolhida)
+            if (Vector2.Distance(player1.transform.position, player2.transform.position) <= distanciaMaxPuxar)
             {
-                //ativa as joints
-                AtivarCordao();
-                //congela o jogador para ele não ser puxado por si mesmo
-                player2.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+                //player2 controla a corda (esquerda)
+                if (Input.GetKeyDown(KeyCode.CapsLock))
+                {
+                    //ativa as joints
+                    AtivarCordao();
+                    //congela o jogador para ele não ser puxado por si mesmo
+                    player2.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+                }
+                if (Input.GetKey(KeyCode.CapsLock))
+                {
+                    //diminui a distancia entre as duas joints que ligam os jogadores
+                    joints[0].distance -= forcaPuxar * Time.deltaTime;
+                    joints[1].distance -= forcaPuxar * Time.deltaTime;
+                }
+                if (Input.GetKeyUp(KeyCode.CapsLock))
+                {
+                    //desativa as joints
+                    AtivarCordao();
+                    //libera o jogador
+                    player2.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+                }
+                //player1 controla a corda (direita)
+                if (Input.GetKeyDown(KeyCode.RightShift))
+                {
+                    //ativa as joints
+                    AtivarCordao();
+                    //congela o jogador para ele não ser puxado por si mesmo
+                    player1.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+                }
+                if (Input.GetKey(KeyCode.RightShift))
+                {
+                    //diminui a distancia entre as duas joints que ligam os jogadores
+                    joints[0].distance -= forcaPuxar * Time.deltaTime;
+                    joints[1].distance -= forcaPuxar * Time.deltaTime;
+                }
+                if (Input.GetKeyUp(KeyCode.RightShift))
+                {
+                    //desativa as joints
+                    AtivarCordao();
+                    //libera o jogador
+                    player1.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+                }
             }
-            if (Input.GetKey(KeyCode.CapsLock))
+            //renderiza a linha entre os jogadores
+            RenderLine();
+        }
+        else
+        {
+            //se tiver apenas um jogador na cena desativa TUDO
+            if (!controleDesativar)
             {
-                //diminui a distancia entre as duas joints que ligam os jogadores
-                joints[0].distance -= forcaPuxar * Time.deltaTime;
-                joints[1].distance -= forcaPuxar * Time.deltaTime;
-            }
-            if (Input.GetKeyUp(KeyCode.CapsLock))
-            {
-                //desativa as joints
-                AtivarCordao();
-                //libera o jogador
-                player2.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
-            }
-            //player1 controla a corda (direita)
-            if (Input.GetKeyDown(KeyCode.RightShift))
-            {
-                //ativa as joints
-                AtivarCordao();
-                //congela o jogador para ele não ser puxado por si mesmo
-                player1.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
-            }
-            if (Input.GetKey(KeyCode.RightShift))
-            {
-                //diminui a distancia entre as duas joints que ligam os jogadores
-                joints[0].distance -= forcaPuxar * Time.deltaTime;
-                joints[1].distance -= forcaPuxar * Time.deltaTime;
-            }
-            if (Input.GetKeyUp(KeyCode.RightShift))
-            {
-                //desativa as joints
-                AtivarCordao();
-                //libera o jogador
-                player1.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+                for (int i = 0; i < joints.Count; i++)
+                {
+                    if (joints[i] != null)
+                    {
+                        joints[i].enabled = false;
+                    }
+                }
+                if (noCordaoPlayer1 != null)
+                {
+                    noCordaoPlayer1.bodyType = RigidbodyType2D.Kinematic;
+                }
+                if (noCordaoPlayer2 != null)
+                {
+                    noCordaoPlayer2.bodyType = RigidbodyType2D.Kinematic;
+                }
+                lr.enabled = false;
+                controleDesativar = true;
             }
         }
-        //renderiza a linha entre os jogadores
-        RenderLine();
     }
     void AtivarCordao()
     {

@@ -1332,6 +1332,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 8492818819629905804, guid: aa294cb34562bba4598ccbda58652da0,
+        type: 3}
+      propertyPath: target1
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8492818819629905804, guid: aa294cb34562bba4598ccbda58652da0,
+        type: 3}
+      propertyPath: target2
+      value: Player2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa294cb34562bba4598ccbda58652da0, type: 3}
 --- !u!1001 &814910585
