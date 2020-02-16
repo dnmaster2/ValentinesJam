@@ -575,6 +575,7 @@ GameObject:
   - component: {fileID: 561008293922979392}
   - component: {fileID: 561008293922979393}
   - component: {fileID: 561008293922979453}
+  - component: {fileID: 4283103619424155364}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -678,6 +679,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PauseMenuUI: {fileID: 561008294784729247}
   BotaoPause: {fileID: 561008294488730027}
+--- !u!114 &4283103619424155364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561008293922979398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfad72f9372d86d40bf553f98ae547cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &561008294042494211
 GameObject:
   m_ObjectHideFlags: 0
