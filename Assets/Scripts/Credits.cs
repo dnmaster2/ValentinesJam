@@ -33,6 +33,13 @@ public class Credits : MonoBehaviour
         //muda a posicao atual do menu
         posicaoAtual = 1;
     }
+    public void Controls()
+    {
+        //executa a funcao de som
+        AudioClick();
+        //muda a posicao atual do menu
+        posicaoAtual = 2;
+    }
     public void BackButton()
     {
         //executa a funcao de som
