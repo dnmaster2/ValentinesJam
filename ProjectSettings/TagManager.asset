@@ -8,6 +8,8 @@ TagManager:
   - Player2
   - Velocidade
   - "Ch\xE3o"
+  - Espelho
+  - GameOver
   layers:
   - Default
   - TransparentFX
