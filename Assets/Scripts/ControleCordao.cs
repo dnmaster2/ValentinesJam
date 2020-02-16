@@ -53,7 +53,7 @@ public class ControleCordao : MonoBehaviour
                     //ativa as joints
                     AtivarCordao();
                     //congela o jogador para ele não ser puxado por si mesmo
-                    player2.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+                    player2.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
                 }
                 if (Input.GetKey(KeyCode.CapsLock))
                 {
@@ -74,7 +74,7 @@ public class ControleCordao : MonoBehaviour
                     //ativa as joints
                     AtivarCordao();
                     //congela o jogador para ele não ser puxado por si mesmo
-                    player1.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+                    player1.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
                 }
                 if (Input.GetKey(KeyCode.RightShift))
                 {
