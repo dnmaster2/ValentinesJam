@@ -263,6 +263,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5583868762550857060, guid: 383b4f0021ece55499c99d7c36d80f7d,
+        type: 3}
+      propertyPath: fadeOutAqui
+      value: 
+      objectReference: {fileID: 2055303249}
     - target: {fileID: 5583868762550857066, guid: 383b4f0021ece55499c99d7c36d80f7d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -338,6 +343,11 @@ PrefabInstance:
       propertyPath: jumpHeight
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 7428096380263508829, guid: 383b4f0021ece55499c99d7c36d80f7d,
+        type: 3}
+      propertyPath: fadeOutAqui
+      value: 
+      objectReference: {fileID: 2055303249}
     - target: {fileID: 7428096380263508831, guid: 383b4f0021ece55499c99d7c36d80f7d,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -4222,6 +4232,12 @@ PrefabInstance:
 --- !u!1 &2055303248 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4280414, guid: 63e412d450d183644affd2611969bce3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2055303247}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2055303249 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7292639386997331376, guid: 63e412d450d183644affd2611969bce3,
     type: 3}
   m_PrefabInstance: {fileID: 2055303247}
   m_PrefabAsset: {fileID: 0}
