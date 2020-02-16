@@ -10,11 +10,12 @@ public class SoundManager : MonoBehaviour
     void Awake()
     {
         DontDestroyOnLoad(gameObject);
+        audioSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        audioSource.clip = clips[0];
+        audioSource.Play();
     }
 }

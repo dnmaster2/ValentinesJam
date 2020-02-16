@@ -11,6 +11,8 @@ TagManager:
   - Espelho
   - GameOver
   - Antiespinho
+  - TriggerEspelho1
+  - TriggerEspelho2
   layers:
   - Default
   - TransparentFX
