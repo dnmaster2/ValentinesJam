@@ -199,9 +199,9 @@ GameObject:
   m_Component:
   - component: {fileID: 699119086}
   - component: {fileID: 699119087}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Colliders
-  m_TagString: Untagged
+  m_TagString: "Ch\xE3o"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -615,7 +615,7 @@ GameObject:
   - component: {fileID: 1566436327}
   m_Layer: 8
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: "Ch\xE3o"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
