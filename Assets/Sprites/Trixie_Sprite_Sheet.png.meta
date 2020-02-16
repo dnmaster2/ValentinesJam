@@ -1,0 +1,631 @@
+fileFormatVersion: 2
+guid: 3a62b4296ca8f0c4080abd061726875c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3687016488298560128
+    second: Trixie_Sprite_Sheet_0
+  - first:
+      213: 7599870989977059994
+    second: Trixie_Sprite_Sheet_1
+  - first:
+      213: -1983643282202597854
+    second: Trixie_Sprite_Sheet_2
+  - first:
+      213: 411224641789575788
+    second: Trixie_Sprite_Sheet_3
+  - first:
+      213: 986988355685386441
+    second: Trixie_Sprite_Sheet_4
+  - first:
+      213: -5279551793494390868
+    second: Trixie_Sprite_Sheet_5
+  - first:
+      213: 7303596050760387190
+    second: Trixie_Sprite_Sheet_6
+  - first:
+      213: -8737936879317851025
+    second: Trixie_Sprite_Sheet_7
+  - first:
+      213: 6199758790087688395
+    second: Trixie_Sprite_Sheet_8
+  - first:
+      213: 3068944043852484438
+    second: Trixie_Sprite_Sheet_9
+  - first:
+      213: 8161463531838173602
+    second: Trixie_Sprite_Sheet_10
+  - first:
+      213: -1460551736457535597
+    second: Trixie_Sprite_Sheet_11
+  - first:
+      213: 832433734047458869
+    second: Trixie_Sprite_Sheet_12
+  - first:
+      213: -6474587394714723512
+    second: Trixie_Sprite_Sheet_13
+  - first:
+      213: -3634145560511069773
+    second: Trixie_Sprite_Sheet_14
+  - first:
+      213: 5867833667896782099
+    second: Trixie_Sprite_Sheet_15
+  - first:
+      213: -176699729825974468
+    second: Trixie_Sprite_Sheet_16
+  - first:
+      213: -2653997932887105763
+    second: Trixie_Sprite_Sheet_17
+  - first:
+      213: 4235699437104310034
+    second: Trixie_Sprite_Sheet_18
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Trixie_Sprite_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 3491
+        width: 908
+        height: 951
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e43d4eeb7c56014abebbd887a85e850
+      internalID: -3687016488298560128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trixie_Sprite_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 2256
+        y: 3499
+        width: 901
+        height: 951
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6f26be76e9960468fa42c7a6dafa70
+      internalID: 7599870989977059994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trixie_Sprite_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 3173
+        y: 3499
+        width: 908
+        height: 898
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 427dac92b0a2bd0458d2351e87691ebc
+      internalID: -1983643282202597854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trixie_Sprite_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 4115
+        y: 3491
+        width: 901
+        height: 871
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9236f82eaf5cd03439b3a053a8f96379
+      internalID: 411224641789575788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trixie_Sprite_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 5080
+        y: 4055
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a3de1d654a4c9740a61192b76e9c7d6
+      internalID: 986988355685386441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trixie_Sprite_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 2479
+        width: 968
+        height: 895
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb9eff3fd4b53d4a95e8b14b9ec3426
+      internalID: -5279551793494390868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trixie_Sprite_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 2499
+        width: 1082
+        height: 883
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55022b6fc4ecf8840a71fa06c980ad60
+      internalID: 7303596050760387190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trixie_Sprite_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 3303
+        y: 2553
+        width: 972
+        height: 944
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55b18ef21c6cae42a30493621a74316
+      internalID: -8737936879317851025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trixie_Sprite_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 4415
+        y: 2479
+        width: 828
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b7d027e6e2d9fd4a93a1a3d73d44d74
+      internalID: 6199758790087688395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trixie_Sprite_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 1374
+        width: 1043
+        height: 911
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d995baada510b254bb1536ade9c0dce0
+      internalID: 3068944043852484438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trixie_Sprite_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2309
+        y: 1431
+        width: 1008
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab99e4f298ff92429ec68641e07ab05
+      internalID: 8161463531838173602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trixie_Sprite_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3363
+        y: 1411
+        width: 912
+        height: 994
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4abdb20664860d44ab87190163ab0248
+      internalID: -1460551736457535597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trixie_Sprite_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 4402
+        y: 1344
+        width: 808
+        height: 1082
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658f66ec12302e049be9cc27ed1c45c7
+      internalID: 832433734047458869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trixie_Sprite_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 189
+        width: 891
+        height: 927
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d7e553134ad244da4710bedaf7c4fd
+      internalID: -6474587394714723512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trixie_Sprite_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 206
+        width: 1024
+        height: 971
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c5ac203cd08dc42bc0f6f6d4b4e957
+      internalID: -3634145560511069773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trixie_Sprite_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 2359
+        y: 406
+        width: 964
+        height: 838
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69576e33c62c255479be5a85a354b241
+      internalID: 5867833667896782099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trixie_Sprite_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 3330
+        y: 259
+        width: 1082
+        height: 1015
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac074b19866b0fe4895b764c69022e86
+      internalID: -176699729825974468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trixie_Sprite_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 4415
+        y: 262
+        width: 1018
+        height: 984
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1744919f230ca1945adced266ffa22bf
+      internalID: -2653997932887105763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trixie_Sprite_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 5544
+        y: 189
+        width: 891
+        height: 927
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b9dbb09f9124814babf89ce78f3efbf
+      internalID: 4235699437104310034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

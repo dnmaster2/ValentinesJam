@@ -22,7 +22,8 @@ public class PartnersFunctionsScript : MonoBehaviour
     //Troca a cor e aumenta a velocidade, e depois checa a booleana
     public IEnumerator ParceiroVelocidadeOn()
     {
-        sprite.color = Color.green;
+        Animator animator = transform.gameObject.GetComponent<Animator>();
+        animator.runtimeAnimatorController = Resources.Load("Player2Mount") as RuntimeAnimatorController;
         player.maxVelocity += BuffVelocidade;
         yield return new WaitForSeconds(0.1f);
         player.comParceiro = true;
@@ -30,7 +31,8 @@ public class PartnersFunctionsScript : MonoBehaviour
     //Troca a cor e muda o nome para evitar morte por espinhos do cenário
     public IEnumerator ParceiroAntiespinhoOn()
     {
-        sprite.color = Color.white;
+        Animator animator = transform.gameObject.GetComponent<Animator>();
+        animator.runtimeAnimatorController = Resources.Load("PlayerMount") as RuntimeAnimatorController;
         gameObject.name = "Antiespinho";
         yield return new WaitForSeconds(0.1f);
         player.comParceiro = true;
@@ -40,6 +42,16 @@ public class PartnersFunctionsScript : MonoBehaviour
     {
         player.maxVelocity = tempVelocity;
         sprite.color = color;
+        if (gameObject.tag == "Player")
+        {
+            Animator animator = transform.gameObject.GetComponent<Animator>();
+            animator.runtimeAnimatorController = Resources.Load("Player") as RuntimeAnimatorController;
+        }
+        if (gameObject.tag == "Player2")
+        {
+            Animator animator = transform.gameObject.GetComponent<Animator>();
+            animator.runtimeAnimatorController = Resources.Load("Player2") as RuntimeAnimatorController;
+        }
         Instantiate(parceirosMontados[index], spawn, Quaternion.identity);
     }
 }
