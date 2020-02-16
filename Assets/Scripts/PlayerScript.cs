@@ -25,6 +25,9 @@ public class PlayerScript : MonoBehaviour
     //Variaveis Comportamento com Parceiros
     public bool comParceiro;
     PartnersFunctionsScript partners;
+    //Variaveis para vitória/derrota
+    public static int playersNaSaida;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -35,6 +38,11 @@ public class PlayerScript : MonoBehaviour
 
     void Update()
     {
+        if (playersNaSaida == 2)
+        {
+            //Adicione a próxima cena aqui
+        }
+
         rb.velocity = new Vector2(lado * velocity, rb.velocity.y);
         if (p1)
         {
@@ -156,6 +164,13 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Espelho"))
+        {
+            playersNaSaida++;
+        }
+    }
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (Input.GetKeyDown(KeyCode.LeftShift) && collision.gameObject.CompareTag("Parede") && p2)
@@ -194,8 +209,13 @@ public class PlayerScript : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Velocidade")){
+        if (other.gameObject.CompareTag("Velocidade"))
+        {
             comParceiro = true;
+        }
+        if (other.CompareTag("Espelho"))
+        {
+            playersNaSaida--;
         }
     }
 }
