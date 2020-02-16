@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4280414}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -246.6, z: 0}
+  m_LocalPosition: {x: 0, y: -305.3, z: 0}
   m_LocalScale: {x: 43.399998, y: 43.399998, z: 43.399998}
   m_Children:
   - {fileID: 2035477930}
@@ -575,7 +575,7 @@ GameObject:
   - component: {fileID: 561008293922979392}
   - component: {fileID: 561008293922979393}
   - component: {fileID: 561008293922979453}
-  - component: {fileID: 4283103619424155364}
+  - component: {fileID: 1809625678}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -679,7 +679,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PauseMenuUI: {fileID: 561008294784729247}
   BotaoPause: {fileID: 561008294488730027}
---- !u!114 &4283103619424155364
+--- !u!114 &1809625678
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1087,7 +1087,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 350, y: 180}
+  m_AnchoredPosition: {x: 420, y: 210}
   m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &561008294488730023
