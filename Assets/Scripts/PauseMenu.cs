@@ -47,6 +47,7 @@ public class PauseMenu : MonoBehaviour
         //carrega a cena 0 (main menu)
         SceneManager.LoadScene(0);
     }
+    /*
     public void QuitDesktop()
     {
         //executa a funcao de som
@@ -54,6 +55,7 @@ public class PauseMenu : MonoBehaviour
         //fecha o jogo
         Application.Quit();
     }
+    */
     void AudioClick()
     {
         //randomiza o pitch do click para parecer clicks diferentes, mas é sempre o mesmo
