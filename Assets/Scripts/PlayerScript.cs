@@ -205,6 +205,7 @@ public class PlayerScript : MonoBehaviour
             if (collision.gameObject.CompareTag("Velocidade"))
             {
                 partners.ParceiroVelocidadeOn();
+                return;
             }
             if (collision.gameObject.CompareTag("Antiespinho"))
             {
