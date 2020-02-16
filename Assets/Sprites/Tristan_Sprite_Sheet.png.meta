@@ -1,0 +1,631 @@
+fileFormatVersion: 2
+guid: 9a8338fdd7d572a42ae3dd5047b08d00
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7910829471198725860
+    second: Tristan_Sprite_Sheet_0
+  - first:
+      213: 3475085574472126648
+    second: Tristan_Sprite_Sheet_1
+  - first:
+      213: 7043938951135423646
+    second: Tristan_Sprite_Sheet_2
+  - first:
+      213: -2918672897247204515
+    second: Tristan_Sprite_Sheet_3
+  - first:
+      213: -7857085174881307587
+    second: Tristan_Sprite_Sheet_4
+  - first:
+      213: -8607157661593872230
+    second: Tristan_Sprite_Sheet_5
+  - first:
+      213: 2672259402846214764
+    second: Tristan_Sprite_Sheet_6
+  - first:
+      213: -2039997850817734380
+    second: Tristan_Sprite_Sheet_7
+  - first:
+      213: -8337304395411615879
+    second: Tristan_Sprite_Sheet_8
+  - first:
+      213: -3850742699919132500
+    second: Tristan_Sprite_Sheet_9
+  - first:
+      213: -3510121296860299814
+    second: Tristan_Sprite_Sheet_10
+  - first:
+      213: -5739240440381562634
+    second: Tristan_Sprite_Sheet_11
+  - first:
+      213: -3065632289226099773
+    second: Tristan_Sprite_Sheet_12
+  - first:
+      213: 4530133713526036104
+    second: Tristan_Sprite_Sheet_13
+  - first:
+      213: 8344656934547161062
+    second: Tristan_Sprite_Sheet_14
+  - first:
+      213: 514700166287516457
+    second: Tristan_Sprite_Sheet_15
+  - first:
+      213: -1029509079835504348
+    second: Tristan_Sprite_Sheet_16
+  - first:
+      213: -1293286092675629536
+    second: Tristan_Sprite_Sheet_17
+  - first:
+      213: -4655369170688625065
+    second: Tristan_Sprite_Sheet_18
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tristan_Sprite_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 3568
+        width: 908
+        height: 898
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e207866031d4b2543a8e22946bd07018
+      internalID: -7910829471198725860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tristan_Sprite_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 2335
+        y: 3576
+        width: 898
+        height: 871
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2fd4a0066ebc2f4bb0d8d2b0080e1bf
+      internalID: 3475085574472126648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tristan_Sprite_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 3287
+        y: 3568
+        width: 910
+        height: 898
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d034d7d01afd9544972c5b9d1155372
+      internalID: 7043938951135423646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tristan_Sprite_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 4231
+        y: 3568
+        width: 898
+        height: 871
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f7b734d7b2c8e646b67776e7918f30d
+      internalID: -2918672897247204515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tristan_Sprite_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 5196
+        y: 4132
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd5d6b74b59e1b4eafefe274412ea17
+      internalID: -7857085174881307587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tristan_Sprite_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 2480
+        width: 968
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bcaafe86d737354d9ffd5e73fe3dfd9
+      internalID: -8607157661593872230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tristan_Sprite_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 2507
+        width: 1083
+        height: 885
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c45842b92c9842458f9789a25affa90
+      internalID: 2672259402846214764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tristan_Sprite_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 2556
+        width: 971
+        height: 944
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ebf4833cd6bad34887e62434e7a48a7
+      internalID: -2039997850817734380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tristan_Sprite_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 4415
+        y: 2479
+        width: 828
+        height: 1062
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f8e83bf39a61e41a996005876f2ced
+      internalID: -8337304395411615879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tristan_Sprite_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 1374
+        width: 1043
+        height: 898
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34123c1f73553f6459da9093790f8f38
+      internalID: -3850742699919132500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tristan_Sprite_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2309
+        y: 1431
+        width: 1008
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfcac8606eb76dc4dbee963dd8a9f79c
+      internalID: -3510121296860299814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tristan_Sprite_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3363
+        y: 1419
+        width: 912
+        height: 994
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41bbee9e96a2b994aa98b6db9af3c808
+      internalID: -5739240440381562634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tristan_Sprite_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 4402
+        y: 1344
+        width: 811
+        height: 1082
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de48d4774affb94ea620c4aa8154024
+      internalID: -3065632289226099773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tristan_Sprite_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 186
+        width: 888
+        height: 927
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1095f0bb7fadfa24289e4d7c4d53ba41
+      internalID: 4530133713526036104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tristan_Sprite_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 212
+        width: 1024
+        height: 947
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bda9b31a6645404ab4e727b95b5d732
+      internalID: 8344656934547161062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tristan_Sprite_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 2359
+        y: 406
+        width: 964
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded3b0054e8019e439433049994c2175
+      internalID: 514700166287516457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tristan_Sprite_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 257
+        width: 1082
+        height: 1015
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3131d444cd6031e43b50013e452a4c8c
+      internalID: -1029509079835504348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tristan_Sprite_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 4422
+        y: 259
+        width: 1011
+        height: 985
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7863aa495e3c32742bb6a5d03305b441
+      internalID: -1293286092675629536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tristan_Sprite_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 5550
+        y: 186
+        width: 888
+        height: 927
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5924a8095be88c54c9a9f9583bf887f6
+      internalID: -4655369170688625065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
