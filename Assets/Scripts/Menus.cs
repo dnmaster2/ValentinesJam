@@ -20,7 +20,6 @@ public class Menus : MonoBehaviour
         //fecha o jogo
         SceneManager.LoadScene(1);
     }
-    /*
     public void QuitButton()
     {
         //executa a funcao de som
@@ -28,7 +27,6 @@ public class Menus : MonoBehaviour
         //fecha o jogo
         Application.Quit();
     }
-    */
     void AudioClick()
     {
         //randomiza o pitch do click para parecer clicks diferentes, mas é sempre o mesmo
