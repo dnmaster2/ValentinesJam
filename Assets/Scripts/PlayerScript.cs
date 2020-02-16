@@ -101,9 +101,9 @@ public class PlayerScript : MonoBehaviour
             }
 
             //O pulo é relativo ao tempo de pressionamento da tecla, quanto mais tempo segura, mais você sobe.
-            if (isJumping && Input.GetKey(KeyCode.UpArrow))
+            if (isJumping)
             {
-                if (counter > 0)
+                if (counter > 0 && Input.GetKey(KeyCode.UpArrow))
                 {
                     rb.velocity = transform.up * jumpHeight;
                     counter -= Time.deltaTime;
@@ -116,7 +116,6 @@ public class PlayerScript : MonoBehaviour
             //Reinicio do contador que trava o pulo carregado
             if (estaNoChao)
             {
-                playerAnimation.Land();
                 counter = totalCount;
             }
             //Se ele estiver com o parceiro nas costas e apertar enter, ele larga ele no cenário.
@@ -187,7 +186,6 @@ public class PlayerScript : MonoBehaviour
                 //Reinicio do contador que trava o pulo carregado
                 if (estaNoChao)
                 {
-                    playerAnimation.Land();
                     counter = totalCount;
                 }
             }
@@ -225,6 +223,14 @@ public class PlayerScript : MonoBehaviour
         if (other.CompareTag("Espelho"))
         {
             playersNaSaida++;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Chão"))
+        {
+            playerAnimation.Land();
         }
     }
     private void OnCollisionStay2D(Collision2D collision)

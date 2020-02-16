@@ -33,11 +33,13 @@ public class PlayerAnimationScript : MonoBehaviour
 
     public void Walk(bool walk)
     {
+        print("rodando andar");
         anim.SetBool("Walking", walk);
     }
 
     public void Jump()
     {
+        print("rodando pular");
         anim.SetBool("Landing", false);
         anim.SetBool("Falling", false);
         anim.SetBool("Jumping", true);
@@ -45,6 +47,7 @@ public class PlayerAnimationScript : MonoBehaviour
 
     public void Land()
     {
+        print("rodando pousar");
         anim.SetBool("Falling", false);
         anim.SetBool("Jumping", false);
         anim.SetBool("Landing", true);
@@ -52,6 +55,7 @@ public class PlayerAnimationScript : MonoBehaviour
 
     public void Fall()
     {
+        print("rodando cair");
         anim.SetBool("Jumping", false);
         anim.SetBool("Landing", false);
         anim.SetBool("Falling", true);
