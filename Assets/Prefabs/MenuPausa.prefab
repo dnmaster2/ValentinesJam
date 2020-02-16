@@ -127,7 +127,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Hey looks like you've failed, let's try again.
+  m_Text: Hey, looks like you've failed, let's try again.
 --- !u!1 &2035477929
 GameObject:
   m_ObjectHideFlags: 0
