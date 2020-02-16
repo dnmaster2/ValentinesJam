@@ -33,7 +33,6 @@ public class PlataformaEsmagadoraScript : MonoBehaviour
     {
         if (!collision.gameObject.CompareTag("Chão") && collision.gameObject.name != "Antiespinho")
         {
-            Destroy(collision.gameObject);
             esmaga_velocidade *= -1;
         }
 

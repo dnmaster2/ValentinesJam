@@ -1039,6 +1039,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 487042773, guid: 306df5c15ce13a94ea213a51f8a7e358, type: 3}
+      propertyPath: gameOverObject
+      value: 
+      objectReference: {fileID: 1167237979}
     - target: {fileID: 2317651360562413577, guid: 306df5c15ce13a94ea213a51f8a7e358,
         type: 3}
       propertyPath: m_Name
@@ -1323,6 +1327,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63e412d450d183644affd2611969bce3, type: 3}
+--- !u!1 &1167237979 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4280414, guid: 63e412d450d183644affd2611969bce3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1167237978}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1402498038
 GameObject:
   m_ObjectHideFlags: 0
@@ -2163,6 +2173,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 487042773, guid: 306df5c15ce13a94ea213a51f8a7e358, type: 3}
+      propertyPath: gameOverObject
+      value: 
+      objectReference: {fileID: 1167237979}
     - target: {fileID: 2317651360562413577, guid: 306df5c15ce13a94ea213a51f8a7e358,
         type: 3}
       propertyPath: m_Name
