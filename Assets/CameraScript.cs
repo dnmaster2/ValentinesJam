@@ -12,17 +12,31 @@ public class CameraScript : MonoBehaviour
     float smoothTime = .2f;
     Camera cam;
     bool gameOver;
+    public GameObject gameOverPrefab;
 
     private void Awake()
     {
         cam = GetComponent<Camera>();
     }
+
+    private void Start()
+    {
+        targets.Add(GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>());
+        targets.Add(GameObject.FindGameObjectWithTag("Player2").GetComponent<Transform>());
+    }
     void LateUpdate()
     {
+        foreach(Transform target in targets)
+        {
+            if(target == null)
+            {
+                targets.Remove(target);
+            }
+        }
+        print(targets.Count);
         if (targets.Count < 2)
         {
-            print("Game Over aqui!!!");
-
+            gameOverPrefab.SetActive(true);
         }
         if (!gameOver)
         {

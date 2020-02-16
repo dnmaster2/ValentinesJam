@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -8,11 +9,13 @@ public class PlayerScript : MonoBehaviour
     Rigidbody2D rb;
     public bool p1, p2;
     Color corzinha;
+
     //Variaveis Movimento
     public float velocity;
     public float maxVelocity;
     float lado;
     public float stopVelocity;
+
     //Variaveis Pulo
     public float jumpHeight;
     public float counter;
@@ -20,11 +23,14 @@ public class PlayerScript : MonoBehaviour
     public Transform sensor;
     public LayerMask pulavel;
     public bool estaNoChao, isJumping;
+
     //Variaveis escalar
     public bool isClimbing;
+
     //Variaveis Comportamento com Parceiros
     public bool comParceiro;
     PartnersFunctionsScript partners;
+
     //Variaveis para vitória/derrota
     public static int playersNaSaida;
 
@@ -40,7 +46,7 @@ public class PlayerScript : MonoBehaviour
     {
         if (playersNaSaida == 2)
         {
-            //Adicione a próxima cena aqui
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
         rb.velocity = new Vector2(lado * velocity, rb.velocity.y);
