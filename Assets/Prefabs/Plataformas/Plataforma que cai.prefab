@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8263869076998328121}
   - component: {fileID: 8263869076998328122}
   - component: {fileID: 3599301693620520811}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plataforma que cai
   m_TagString: Untagged
   m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
