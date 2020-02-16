@@ -13,7 +13,7 @@ public class PlayerScript : MonoBehaviour
     //Variaveis Movimento
     public float velocity;
     public float maxVelocity;
-    float lado;
+    public float lado;
     public float stopVelocity;
 
     //Variaveis Pulo
@@ -36,11 +36,14 @@ public class PlayerScript : MonoBehaviour
     public static int playersNaSaida;
     public int thisIndex;
 
+    //Variaveis para animação
+    public PlayerAnimationScript playerAnimation;
     void Awake()
     {
         //Loading dos componentes
         rb = GetComponent<Rigidbody2D>();
         partners = GetComponent<PartnersFunctionsScript>();
+        playerAnimation = GetComponent<PlayerAnimationScript>();
         //Registro das variaveis importantes
         totalCount = counter;
         corzinha = new Color(0.4185208f, 0.7152144f, 0.9339623f);

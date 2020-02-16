@@ -49,28 +49,28 @@ TextureImporter:
     second: dstbdgnsd_17
   - first:
       213: -6751040731299251261
-    second: dstbdgnsd_20
+    second: pulo3
   - first:
       213: 5200920754178136449
-    second: dstbdgnsd_22
+    second: pulo4
   - first:
       213: 7579339713812891590
-    second: dstbdgnsd_23
+    second: pulo5
   - first:
       213: -892405117773274753
-    second: dstbdgnsd_24
+    second: pulo6
   - first:
       213: 1730347795477039832
-    second: dstbdgnsd_25
+    second: pulo1
   - first:
       213: 5250349099398882052
-    second: dstbdgnsd_26
+    second: pulo2
   - first:
       213: 5080877942261271467
-    second: dstbdgnsd_27
+    second: pulo7
   - first:
       213: -5912303409708212208
-    second: dstbdgnsd_28
+    second: pulo8
   - first:
       213: -817653837532085132
     second: dstbdgnsd_29
@@ -117,7 +117,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -192,6 +192,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -361,7 +385,7 @@ TextureImporter:
         width: 5
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -508,7 +532,7 @@ TextureImporter:
         width: 5
         height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -521,7 +545,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dstbdgnsd_20
+      name: pulo3
       rect:
         serializedVersion: 2
         x: 1209
@@ -542,7 +566,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dstbdgnsd_22
+      name: pulo4
       rect:
         serializedVersion: 2
         x: 1708
@@ -563,7 +587,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dstbdgnsd_23
+      name: pulo5
       rect:
         serializedVersion: 2
         x: 2213
@@ -584,11 +608,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dstbdgnsd_24
+      name: pulo6
       rect:
         serializedVersion: 2
         x: 2804
-        y: 277
+        y: 292
         width: 647
         height: 769
       alignment: 9
@@ -605,7 +629,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dstbdgnsd_25
+      name: pulo1
       rect:
         serializedVersion: 2
         x: 58
@@ -626,7 +650,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dstbdgnsd_26
+      name: pulo2
       rect:
         serializedVersion: 2
         x: 639
@@ -647,7 +671,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dstbdgnsd_27
+      name: pulo7
       rect:
         serializedVersion: 2
         x: 3453
@@ -668,7 +692,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dstbdgnsd_28
+      name: pulo8
       rect:
         serializedVersion: 2
         x: 4014
@@ -697,7 +721,7 @@ TextureImporter:
         width: 4
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
