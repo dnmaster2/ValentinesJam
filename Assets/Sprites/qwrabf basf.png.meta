@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 191253f08821cdf4396c813d99cde8c7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4798029542765456726
+    second: qwrabf basf_0
+  - first:
+      213: 6677849826605979838
+    second: qwrabf basf_1
+  - first:
+      213: -40193120137599734
+    second: qwrabf basf_2
+  - first:
+      213: 6249145082827029370
+    second: qwrabf basf_3
+  - first:
+      213: 1408982724552109784
+    second: qwrabf basf_4
+  - first:
+      213: 7748536490627656401
+    second: qwrabf basf_5
+  - first:
+      213: -2491688380871315509
+    second: qwrabf basf_6
+  - first:
+      213: 8946518543738269227
+    second: qwrabf basf_7
+  - first:
+      213: -2096786402265836053
+    second: qwrabf basf_8
+  - first:
+      213: 2120289394992262184
+    second: qwrabf basf_9
+  - first:
+      213: -5472877402588297783
+    second: qwrabf basf_10
+  - first:
+      213: 2214824879078893056
+    second: qwrabf basf_11
+  - first:
+      213: -858878659157792482
+    second: qwrabf basf_12
+  - first:
+      213: -2195573788442984949
+    second: qwrabf basf_13
+  - first:
+      213: -7595264288769911010
+    second: qwrabf basf_14
+  - first:
+      213: -3563801350490604456
+    second: qwrabf basf_15
+  - first:
+      213: -4396047914802942943
+    second: qwrabf basf_16
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: qwrabf basf_0
+      rect:
+        serializedVersion: 2
+        x: 2354
+        y: 3553
+        width: 904
+        height: 891
+      alignment: 9
+      pivot: {x: 0.5495695, y: 0.50000054}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da05552125e0a99418a28d2c44b47769
+      internalID: -4798029542765456726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwrabf basf_1
+      rect:
+        serializedVersion: 2
+        x: 3295
+        y: 3553
+        width: 895
+        height: 868
+      alignment: 9
+      pivot: {x: 0.5417235, y: 0.5172088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad72f87c0838bc43abd8452847900ff
+      internalID: 6677849826605979838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwrabf basf_2
+      rect:
+        serializedVersion: 2
+        x: 4260
+        y: 4114
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11f9db4d99cf7543ab34d0d1edd7deb
+      internalID: -40193120137599734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwrabf basf_3
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 2481
+        width: 965
+        height: 891
+      alignment: 9
+      pivot: {x: 0.5696538, y: 0.4916184}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d7c9d3f1e7b844ea0d59c57e941730
+      internalID: 6249145082827029370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwrabf basf_4
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 2501
+        width: 1078
+        height: 881
+      alignment: 9
+      pivot: {x: 0.63856065, y: 0.52543217}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83a2d7dfa0c9744fafb47c3757e9fb0
+      internalID: 1408982724552109784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwrabf basf_5
+      rect:
+        serializedVersion: 2
+        x: 3305
+        y: 2554
+        width: 968
+        height: 942
+      alignment: 9
+      pivot: {x: 0.6234451, y: 0.4445026}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b72d9f2ea151c47b9e3ea10d62b1be
+      internalID: 7748536490627656401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwrabf basf_6
+      rect:
+        serializedVersion: 2
+        x: 4417
+        y: 2481
+        width: 824
+        height: 1058
+      alignment: 9
+      pivot: {x: 0.6359549, y: 0.4717646}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22b8e1f250fcd848bfc1c5480acc24a
+      internalID: -2491688380871315509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwrabf basf_7
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 1376
+        width: 1042
+        height: 908
+      alignment: 9
+      pivot: {x: 0.6290132, y: 0.50000054}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d1e86d748c08c4f89e8a999b9c1b5b
+      internalID: 8946518543738269227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwrabf basf_8
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 1432
+        width: 1005
+        height: 858
+      alignment: 9
+      pivot: {x: 0.5891752, y: 0.5000003}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c485f44e22ab05441be319b40eb69d9a
+      internalID: -2096786402265836053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwrabf basf_9
+      rect:
+        serializedVersion: 2
+        x: 3365
+        y: 1412
+        width: 908
+        height: 992
+      alignment: 9
+      pivot: {x: 0.5904764, y: 0.4623572}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8369241aa3c23814eb1029b93373186c
+      internalID: 2120289394992262184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwrabf basf_10
+      rect:
+        serializedVersion: 2
+        x: 4403
+        y: 1346
+        width: 805
+        height: 1078
+      alignment: 9
+      pivot: {x: 0.6206085, y: 0.4653601}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93cbb84358e64424ab36403e647950ce
+      internalID: -5472877402588297783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwrabf basf_11
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 190
+        width: 888
+        height: 925
+      alignment: 9
+      pivot: {x: 0.5, y: 0.33852097}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5469caf27fa2114fbcd3dc7f044b2e2
+      internalID: 2214824879078893056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwrabf basf_12
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 207
+        width: 1022
+        height: 968
+      alignment: 9
+      pivot: {x: 0.6242303, y: 0.5694379}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0923381cead3f24479183827e22e9d99
+      internalID: -858878659157792482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwrabf basf_13
+      rect:
+        serializedVersion: 2
+        x: 2360
+        y: 407
+        width: 962
+        height: 835
+      alignment: 9
+      pivot: {x: 0.5310541, y: 0.42844677}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3e1596076b2174e9ae35649ac3d859
+      internalID: -2195573788442984949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwrabf basf_14
+      rect:
+        serializedVersion: 2
+        x: 3332
+        y: 260
+        width: 1078
+        height: 1012
+      alignment: 9
+      pivot: {x: 0.603921, y: 0.5590391}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11aa8a8d44815c4587c0ad0482d1fbb
+      internalID: -7595264288769911010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwrabf basf_15
+      rect:
+        serializedVersion: 2
+        x: 4417
+        y: 264
+        width: 1015
+        height: 981
+      alignment: 9
+      pivot: {x: 0.57358086, y: 0.55329186}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cea93a7af51ec248a3e2159868b3f92
+      internalID: -3563801350490604456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwrabf basf_16
+      rect:
+        serializedVersion: 2
+        x: 5545
+        y: 183
+        width: 888
+        height: 925
+      alignment: 9
+      pivot: {x: 0.4831796, y: 0.41118684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d94eaa5500df24499d045edc4c6df9
+      internalID: -4396047914802942943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

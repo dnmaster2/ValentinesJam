@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 661e2c8ae3f76a942b82fbbf55483861
   - enabled: 1
+    path: Assets/Scenes/IntroStory.unity
+    guid: 8366331bdc7fd334eab4a8d90f8446d7
+  - enabled: 1
     path: Assets/Scenes/Fases/Fase1.unity
     guid: 784776f0d57f7924e938b0cb0584ec7f
   - enabled: 1
@@ -23,4 +26,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fases/Fase5.unity
     guid: 9cf49009e8a5870408f5f95f4493cc6a
+  - enabled: 1
+    path: Assets/Scenes/Fases/Fase6.unity
+    guid: b1c07e620c260a444947a9072813759d
+  - enabled: 1
+    path: Assets/Scenes/Fases/Fase7.unity
+    guid: b78c85abe9a418a469c1d56682ec6f74
+  - enabled: 1
+    path: Assets/Scenes/Fases/Fase8.unity
+    guid: 519c15dc3a5c7984d941695f00f5a99b
+  - enabled: 1
+    path: Assets/Scenes/Fases/Level9.unity
+    guid: 071f088a15fcdb24db11d71e5743d65b
   m_configObjects: {}
