@@ -28,6 +28,11 @@ public class SoundManager : MonoBehaviour
             audioSource.clip = clips[1];
             audioSource.Play();
         }
+        else
+        {
+            audioSource.clip = clips[0];
+            audioSource.Play();
+        }
 
         if(SceneManager.GetActiveScene().buildIndex == 11)
         {

@@ -131,9 +131,9 @@ GameObject:
   - component: {fileID: 219841119}
   - component: {fileID: 219841118}
   - component: {fileID: 219841117}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: quadrado de testes
-  m_TagString: Untagged
+  m_TagString: "Ch\xE3o"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -604,7 +604,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -2
-  m_Sprite: {fileID: 21300000, guid: 9552dad2ccf4adc4c83056c99adb4a56, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0fef0ddc901786846aafa4a22682880f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -623,8 +623,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096514665}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.217, y: -1.543, z: 0}
-  m_LocalScale: {x: 5.7414556, y: 3.03, z: 1}
+  m_LocalPosition: {x: 0.42, y: -0.56, z: 0}
+  m_LocalScale: {x: 3.7391806, y: 1.9733179, z: 0.65126}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3

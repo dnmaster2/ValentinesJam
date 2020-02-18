@@ -2603,6 +2603,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MenuPausa
       objectReference: {fileID: 0}
+    - target: {fileID: 561008293312952706, guid: 63e412d450d183644affd2611969bce3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 561008293312952765, guid: 63e412d450d183644affd2611969bce3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2772,12 +2777,12 @@ PrefabInstance:
     - target: {fileID: 2276571537274872530, guid: c647bc0269f230648abdc1d1f084c8f0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 31.33
+      value: 33.14
       objectReference: {fileID: 0}
     - target: {fileID: 2276571537274872530, guid: c647bc0269f230648abdc1d1f084c8f0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -23.680729
+      value: -23.44
       objectReference: {fileID: 0}
     - target: {fileID: 2276571537274872530, guid: c647bc0269f230648abdc1d1f084c8f0,
         type: 3}
