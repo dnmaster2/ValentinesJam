@@ -34,7 +34,7 @@ public class PlayerScript : MonoBehaviour
 
     //Variaveis para vitória/derrota
     public static int playersNaSaida;
-    public GameObject fadeOutAqui;
+    public GameObject congratulationsAqui;
 
     //Variveis de Animação
     public PlayerAnimationScript playerAnimation;
@@ -55,7 +55,7 @@ public class PlayerScript : MonoBehaviour
         if (playersNaSaida == 2)
         {
             //Detecta se há 2 players na saida, se sim, passa para o proximo nivel
-            fadeOutAqui.SetActive(true);
+            congratulationsAqui.SetActive(true);
         }
 
         //O Código é beeeem repetitivo pela falta de tempo de otimização.
@@ -194,16 +194,21 @@ public class PlayerScript : MonoBehaviour
         //Se ele ativar a escalada
         if (isClimbing)
         {
-            //Gravidade é desligada para que ele não caia
-            rb.gravityScale = 0f;
-            //O controle da escalada é simplificado, com um botão ele sobe tudo, com outro ele desce tudo.
+            rb.bodyType = RigidbodyType2D.Kinematic;
             if (Input.GetKey(KeyCode.W))
             {
+                print("aa");
                 rb.velocity = Vector2.up * 5f;
             }
-            if (Input.GetKey(KeyCode.S))
+            else if (Input.GetKey(KeyCode.S))
             {
+                print("bb");
                 rb.velocity = Vector2.down * 5f;
+            }
+            else
+            {
+                print("cc");
+                rb.velocity = Vector2.zero;
             }
         }
         //Se ele estiver com o parceiro nas costas e apertar enter, ele larga ele no cenário.
@@ -224,6 +229,10 @@ public class PlayerScript : MonoBehaviour
         if (other.CompareTag("Espelho"))
         {
             playersNaSaida++;
+        }
+        if (other.CompareTag("FimSolo"))
+        {
+            congratulationsAqui.SetActive(true);
         }
     }
 
@@ -250,6 +259,7 @@ public class PlayerScript : MonoBehaviour
         //Se ele sai da parede, as variaveis voltam ao default
         if (collision.gameObject.CompareTag("Parede") && p2)
         {
+            rb.bodyType = RigidbodyType2D.Dynamic;
             isClimbing = false;
             rb.gravityScale = 2f;
             GetComponent<SpriteRenderer>().color = corzinha;

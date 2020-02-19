@@ -47,6 +47,11 @@ public class Credits : MonoBehaviour
         //muda a posicao atual do menu
         posicaoAtual = 0;
     }
+    public void Password()
+    {
+        AudioClick();
+        posicaoAtual = 3;
+    }
     void AudioClick()
     {
         //randomiza o pitch do click para parecer clicks diferentes, mas é sempre o mesmo

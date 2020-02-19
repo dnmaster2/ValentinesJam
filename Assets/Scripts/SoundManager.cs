@@ -7,7 +7,6 @@ public class SoundManager : MonoBehaviour
 {
     AudioSource audioSource;
     public List<AudioClip> clips;
-    int a;
 
     void Awake()
     {

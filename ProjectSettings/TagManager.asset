@@ -13,6 +13,7 @@ TagManager:
   - Antiespinho
   - TriggerEspelho1
   - TriggerEspelho2
+  - FimSolo
   layers:
   - Default
   - TransparentFX

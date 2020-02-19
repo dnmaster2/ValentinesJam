@@ -11,6 +11,14 @@ public class Skipper : MonoBehaviour
         StartCoroutine(PulaCena());
     }
 
+    private void Update()
+    {
+        if (Input.anyKeyDown)
+        {
+            Instantiate(fadeout, canvasRef.transform);
+        }
+    }
+
     IEnumerator PulaCena()
     {
         yield return new WaitForSeconds(anim.length);
